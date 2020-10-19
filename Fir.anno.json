@@ -1,0 +1,41 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Fir|Fir>io_out",
+    "sources":[
+      "~Fir|Fir>io_consts_9",
+      "~Fir|Fir>io_consts_8",
+      "~Fir|Fir>io_consts_7",
+      "~Fir|Fir>io_consts_6",
+      "~Fir|Fir>io_consts_5",
+      "~Fir|Fir>io_consts_4",
+      "~Fir|Fir>io_consts_3",
+      "~Fir|Fir>io_consts_2",
+      "~Fir|Fir>io_in",
+      "~Fir|Fir>io_consts_0",
+      "~Fir|Fir>io_consts_1"
+    ]
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.options.TargetDirAnnotation",
+    "directory":"."
+  },
+  {
+    "class":"firrtl.options.OutputAnnotationFileAnnotation",
+    "file":"Fir"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  }
+]

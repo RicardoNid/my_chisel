@@ -1,0 +1,136 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 15652
+License: Customer
+
+Current time: 	Sun Oct 18 14:55:51 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 3
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	RicNid
+User home directory: C:/Users/RicNid
+User working directory: E:/LtrProjects/SharedProjects/my_chisel
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/RicNid/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/RicNid/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/RicNid/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/RicNid/AppData/Roaming/Xilinx/Vivado/vivado.log
+Vivado journal file location: 	C:/Users/RicNid/AppData/Roaming/Xilinx/Vivado/vivado.jou
+Engine tmp dir: 	E:/LtrProjects/SharedProjects/my_chisel/.Xil/Vivado-15652-DESKTOP-T43KDVG
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_SDK: C:/Xilinx/Vitis/2020.1
+XILINX_VITIS: C:/Xilinx/Vitis/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	273 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 2,080 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 74 MB (+74955kb) [00:00:02]
+// [Engine Memory]: 1,711 MB (+1642625kb) [00:00:02]
+// [GUI Memory]: 91 MB (+14387kb) [00:00:02]
+// [GUI Memory]: 96 MB (+209kb) [00:00:02]
+// Xgd.load filename: C:/Xilinx/Vivado/2020.1/data/parts/xilinx/kintexu/devint/kintexu/xcku040/xcku040.xgd; ZipEntry: xcku040_detail.xgd elapsed time: 1s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.1s
+// [Engine Memory]: 1,860 MB (+66629kb) [00:00:03]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.1s
+// [GUI Memory]: 123 MB (+22854kb) [00:00:06]
+// [Engine Memory]: 2,006 MB (+55047kb) [00:00:06]
+// [GUI Memory]: 131 MB (+1929kb) [00:00:06]
+// Schematic: addNotify
+// [GUI Memory]: 149 MB (+11995kb) [00:00:07]
+// Tcl Message: Vivado% 
+// Tcl Message: source E:\LtrProjects\SharedProjects\my_chisel\synth.tcl 
+// Tcl Message: couldn't read file "E:LtrProjectsSharedProjectsmy_chiselsynth.tcl": no such file or directory Vivado% 
+// Tcl Message: source E:\\LtrProjects\\SharedProjects\\my_chisel\\synth.tcl 
+// Tcl Message: # cd E:/LtrProjects/SharedProjects/my_chisel # set outputDir ./synth_output # set design MealyFSM # file mkdir $outputDir # read_verilog $design.v 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1430.324 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'MealyFSM' [E:/LtrProjects/SharedProjects/my_chisel/MealyFSM.v:1] INFO: [Synth 8-6155] done synthesizing module 'MealyFSM' (1#1) [E:/LtrProjects/SharedProjects/my_chisel/MealyFSM.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1430.324 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1436.367 ; gain = 6.043 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1436.367 ; gain = 6.043 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1436.367 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1485.066 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1485.066 ; gain = 54.742 
+// Tcl Message: 5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1485.066 ; gain = 54.742 
+// Tcl Message: # start_gui 
+// Tcl Message: # synth_design -top top -part xcku040-ffva1156-2-i -rtl 
+// Tcl Message: Command: synth_design -top top -part xcku040-ffva1156-2-i -rtl Starting synth_design 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: SHOW_SCHEMATIC
+// [GUI Memory]: 172 MB (+16985kb) [00:00:09]
+// bz (cs):  Sourcing Tcl script 'E:\LtrProjects\SharedProjects\my_chisel\synth.tcl' : addNotify
+// TclEventType: SHOW_SCHEMATIC
+// Schematic: addNotify
+// TclEventType: WRITE_SCHEMATIC
+// TclEventType: STOP_GUI
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: # show_schematic [get_nets] # write_schematic -force -format pdf ./synth_output/$design.pdf # stop_gui 
+dismissDialog("Sourcing Tcl script 'E:\\LtrProjects\\SharedProjects\\my_chisel\\synth.tcl'"); // bz (cs)
+// TclEventType: STOP_PROGRESS_DIALOG
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1008 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1009 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
