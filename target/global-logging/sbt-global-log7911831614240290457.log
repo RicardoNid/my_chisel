@@ -1,0 +1,3 @@
+[debug] > Exec(run --help, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true

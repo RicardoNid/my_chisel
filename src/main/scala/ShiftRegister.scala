@@ -17,7 +17,7 @@ class ShiftRegister(val init: Int = 1) extends Module {
   val nextState = Wire(UInt(4.W))
   nextState := (state << 1 | io.in)
    */
-
+PriorityMux
   state := nextState // 寄存器组
 
   io.out := state // 输出逻辑

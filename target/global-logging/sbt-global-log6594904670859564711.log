@@ -1,0 +1,3 @@
+[debug] > Exec(runMain FSMDriver --help, None, None)
+[debug] Evaluating tasks: Compile / runMain
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true

@@ -11,14 +11,12 @@ class FirFilter(bitWidth: Int, coeffs: Seq[UInt], version: String = "standard") 
   })
 
   if (version == "standard") { // 标准形式FIR
-    val zs = Reg(Vec(coeffs.length, UInt(bitWidth.W)))
-    zs(0) := io.in
+    val zs = Reg(Vec(coeffs.length, UInt(bitWidth.W))) // logic [bitWidth - 1:0] zs [coeffs.length]
+    zs(0) := io.in // zs[0] <= io.in
     for (i <- 1 until coeffs.length) {
       zs(i) := zs(i - 1)
     }
-
     val products = VecInit.tabulate(coeffs.length)(i => zs(i) * coeffs(i))
-
     io.out := products.reduce(_ + _)
   }
 

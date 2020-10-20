@@ -10,5 +10,3 @@ class FIFO (depth:Int)extends Module {
   val queue = Queue(io.in, depth)
   io.out <> queue
 }
-
-

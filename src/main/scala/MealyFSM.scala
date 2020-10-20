@@ -6,7 +6,7 @@ import chisel3.iotesters.{ChiselFlatSpec, Driver, PeekPokeTester}
 case class MealyFSMParams(
                            nStates: Int, // number of states
                            s0: Int, // initial state
-                           stateTransition: (Int, Boolean) => Int, // function describing state transition logci
+                           stateTransition: (Int, Boolean) => Int, // function describing state transition logic
                            output: (Int, Boolean) => Int // function describing output logic
                          ) {
   require(nStates >= 0)
