@@ -13,7 +13,6 @@ class FirMore(length: Int, bitwidth: Int, window: (Int, Int) => Seq[Int]) extend
   // 将窗函数生成的参数转换为chisel类型
   val coeffs = window(length, bitwidth).map(_.U)
   // 构造移位寄存器
-  // 我高潮了
   val regs = Seq.fill(length)(Wire(UInt(bitwidth.W))).scan(io.in)((prev: UInt, next: UInt) => {
     next := RegNext(prev)
     next

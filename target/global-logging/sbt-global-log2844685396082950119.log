@@ -1,0 +1,103 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\RicNid\AppData\Local\Temp\idea4466.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\RicNid\AppData\Local\Temp\idea4466.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.0 (AdoptOpenJDK Java 1.8.0_265)
+[debug]       Load.loadUnit: plugins took 74.7619ms
+[debug]       Load.loadUnit: defsScala took 0.2719ms
+[debug] [Loading] Scanning directory C:\Users\RicNid\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\RicNid\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 19.2753 ms
+[debug]           Load.resolveProject(global-plugins) took 123.3261ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\RicNid\.sbt\1.0\plugins, plugins: List(<none>))) took 164.3995ms
+[debug] [Loading] Done in C:\Users\RicNid\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 181.3215ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.2024ms
+[debug]     Load.loadUnit(file:/C:/Users/RicNid/.sbt/1.0/plugins/, ...) took 262.4358ms
+[debug]   Load.apply: load took 420.0188ms
+[debug]   Load.apply: resolveProjects took 6.7234ms
+[debug]   Load.apply: finalTransforms took 51.0756ms
+[debug]   Load.apply: config.delegates took 13.223ms
+[debug]   Load.apply: Def.make(settings)... took 753.2008ms
+[debug]   Load.apply: structureIndex took 63.2101ms
+[debug]   Load.apply: mkStreams took 1.5054ms
+[info] loading global plugins from C:\Users\RicNid\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 3544.5664ms
+[debug]           Load.loadUnit: plugins took 22.2351ms
+[debug]           Load.loadUnit: defsScala took 0.0024ms
+[debug] [Loading] Scanning directory E:\LtrProjects\SharedProjects\my_chisel\project
+[debug]             Load.loadUnit: mkEval took 8.358ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in E:\LtrProjects\SharedProjects\my_chisel\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.9603 ms
+[info] loading settings for project my_chisel-build from idea4466.sbt ...
+[debug]               Load.resolveProject(my_chisel-build) took 14.8682ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id my_chisel-build, base: E:\LtrProjects\SharedProjects\my_chisel\project, plugins: List(<none>))) took 17.4251ms
+[debug] [Loading] Done in E:\LtrProjects\SharedProjects\my_chisel\project, returning: (my_chisel-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 128.7179ms
+[debug]           Load.loadUnit: cleanEvalClasses took 5.1689ms
+[debug]         Load.loadUnit(file:/E:/LtrProjects/SharedProjects/my_chisel/project/, ...) took 156.8477ms
+[debug]       Load.apply: load took 157.8254ms
+[debug]       Load.apply: resolveProjects took 0.0972ms
+[debug]       Load.apply: finalTransforms took 6.1846ms
+[debug]       Load.apply: config.delegates took 0.5368ms
+[debug]       Load.apply: Def.make(settings)... took 76.255ms
+[debug]       Load.apply: structureIndex took 15.4586ms
+[debug]       Load.apply: mkStreams took 0.0037ms
+[info] loading project definition from E:\LtrProjects\SharedProjects\my_chisel\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 963.956ms
+[debug]     Load.loadUnit: defsScala took 0.0026ms
+[debug] [Loading] Scanning directory E:\LtrProjects\SharedProjects\my_chisel
+[debug]       Load.loadUnit: mkEval took 0.172ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in E:\LtrProjects\SharedProjects\my_chisel, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 1.2015 ms
+[info] loading settings for project my_chisel from build.sbt ...
+[debug]         Load.resolveProject(my_chisel) took 26.688ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id my_chisel, base: E:\LtrProjects\SharedProjects\my_chisel, plugins: List(<none>))) took 28.7093ms
+[debug] [Loading] Done in E:\LtrProjects\SharedProjects\my_chisel, returning: (my_chisel)
+[debug]     Load.loadUnit: loadedProjectsRaw took 152.7592ms
+[debug]     Load.loadUnit: cleanEvalClasses took 2.7067ms
+[debug]   Load.loadUnit(file:/E:/LtrProjects/SharedProjects/my_chisel/, ...) took 1119.8213ms
+[debug] Load.apply: load took 1121.239ms
+[debug] Load.apply: resolveProjects took 0.117ms
+[debug] Load.apply: finalTransforms took 17.8599ms
+[debug] Load.apply: config.delegates took 0.2167ms
+[debug] Load.apply: Def.make(settings)... took 54.4786ms
+[debug] Load.apply: structureIndex took 11.9569ms
+[debug] Load.apply: mkStreams took 0.0031ms
+[info] set current project to my_chisel (in build file:/E:/LtrProjects/SharedProjects/my_chisel/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 21302 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 21302, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to my_chisel (in build file:/E:/LtrProjects/SharedProjects/my_chisel/)
+[debug] > Exec(idea-shell, None, None)

@@ -8,5 +8,6 @@ class FIFO (depth:Int)extends Module {
     val out = Decoupled(UInt(8.W))
   })
   val queue = Queue(io.in, depth)
+
   io.out <> queue
 }
