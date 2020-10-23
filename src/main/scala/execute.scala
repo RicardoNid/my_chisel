@@ -5,6 +5,7 @@ import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
 
 import scala.math.Pi
 
+
 object test extends App {
   val filter = new ScalaFirFilter(Seq(1, 1, 1, 1))
 
@@ -29,10 +30,15 @@ object test extends App {
 
 object verilog extends App {
   (new ChiselStage).execute(Array("--target-dir", "./verilog_output"),
-    Seq(ChiselGeneratorAnnotation(() => new CORDIC)))
+    Seq(ChiselGeneratorAnnotation(() => new DMS(100, 10))))
 }
 
 object verilogText extends App {
-  val verilogString = (new chisel3.stage.ChiselStage).emitVerilog(new FixedPointAdder)
+  val verilogString = (new chisel3.stage.ChiselStage).emitVerilog(new DMS(100, 10))
   println(verilogString)
+}
+
+object help extends App {
+  (new ChiselStage).execute(Array("--help"),
+    Seq(ChiselGeneratorAnnotation(() => new DMS(100, 10))))
 }

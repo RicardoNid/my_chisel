@@ -15,4 +15,5 @@ object CORDICutil {
     else
       cos(getCartesianPhase(iterations - 1)) * getCartesianScaleComplment(iterations - 1)
   }
+
 }

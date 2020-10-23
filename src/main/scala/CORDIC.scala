@@ -1,43 +1,87 @@
+import CORDICutil._
+import Chisel.Enum
 import chisel3._
-import chisel3.util._
-import chisel3.iotesters.{ChiselFlatSpec, Driver, PeekPokeTester}
 import chisel3.experimental.FixedPoint
+
+import scala.math.{Pi, abs}
 
 // 在实现各种功能模式之后,应该再通过柯里化,将常用功能重新命名
 
 class CORDIC(mode: String = "rotate", arch: String = "pipelined",
-             widthIn: Int = 10,  iterations: Int = 20, widthPhase: Int = 30) extends Module {
+             widthIn: Int = 10, iterations: Int = 20) extends Module {
 
+  // 精度和类型声明
   val widthOut: Int = widthIn + iterations
+  val dataInT = FixedPoint(widthIn.W, (widthIn - 2).BP) // 对标Xilinx IP, 使用1QN
+  val dataPhaseInT = FixedPoint(widthIn.W, (widthIn - 3).BP) // 对标Xilinx IP, 使用2QN
+  val dataOutT = FixedPoint(widthOut.W, (widthOut - 3).BP) // 对标Xilinx IP, 使用2QN
+  val ZERO = 0.F(widthIn.W, (widthIn - 3).BP)
+  val halfPi = (Pi/2).F(widthIn.W, (widthIn - 3).BP)
 
-  val dataInT = FixedPoint(widthIn.W, (widthIn - 3).BP) // range: [-2, 2)
-  val dataInPhaseT = FixedPoint(widthPhase.W, (widthPhase - 4).BP) // range[-Pi, Pi]
-  val dataOutT = FixedPoint(widthOut.W, (widthOut - 3).BP) // range: [-2, 2)
+  // 根据功能模式,决定旋转采用的参数列表,旋转初始值,旋转逼近方式,并决定各个端口启用状况
+  object PortName extends Enumeration {
+    val XIN, YIN, PHASEIN, XOUT, YOUT, PHASEOUT = Value
+  }
+  import PortName._
 
-  val ZERO = 0.F(widthPhase.W, (widthPhase - 4).BP)
+  val approachingMode = if (List("rotate", "tri").contains(mode)) "R" else "V"
+
+  val PortTable = Map(
+    "rotate" -> List(1, 1, 1, 1, 1, 0),
+    "translate" -> List(1, 1, 0, 1, 0, 1),
+    "tri" -> List(0, 0, 1, 1, 1, 0),
+    "arctan" -> List(1, 1, 0, 0, 0, 1),
+  )
 
   val io = IO(new Bundle {
-    val dataInX = if(mode == "rotate") Some (Input(dataInT)) else if (mode == "tri") None else None
-    val dataInY = if(mode == "rotate") Some (Input(dataInT)) else if (mode == "tri") None else None
-    val dataInPhase = Input(dataInPhaseT)
-    val dataOutX = Output(dataOutT)
-    val dataOutY = Output(dataOutT)
+    val dataInX = if (PortTable(mode)(XIN.id) == 1) Some(Input(dataInT)) else None
+    val dataInY = if (PortTable(mode)(YIN.id) == 1) Some(Input(dataInT)) else None
+    val dataInPhase = if (PortTable(mode)(PHASEIN.id) == 1) Some(Input(dataPhaseInT)) else None
+    val dataOutX = if (PortTable(mode)(XOUT.id) == 1) Some(Output(dataOutT)) else None
+    val dataOutY = if (PortTable(mode)(YOUT.id) == 1) Some(Output(dataOutT)) else None
+    val dataOutPhase = if (PortTable(mode)(PHASEOUT.id) == 1) Some(Output(dataOutT)) else None
   })
 
   // 生成CORDIC计算所需的静态参数
   val coeffcients = for (i <- 0 until iterations) yield {
-    CORDICutil.getCartesianPhase(i).F(widthPhase.W, (widthPhase - 4).BP)
+    getCartesianPhase(i).F(widthIn.W, (widthIn - 4).BP)
   }
 
   // 寄存器组
   // todo: firrtl会不会进行精度优化?
   val regsX = Reg(Vec(iterations + 1, dataOutT))
   val regsY = Reg(Vec(iterations + 1, dataOutT))
-  val regsPhase = Reg(Vec(iterations + 1, dataInPhaseT))
+  val regsPhase = Reg(Vec(iterations + 1, dataOutT))
 
-  regsX(0) := io.dataInX.getOrElse(1.0.F(widthIn.W, (widthIn - 3).BP))
-  regsY(0) := io.dataInY.getOrElse(0.0.F(widthIn.W, (widthIn - 3).BP))
-  regsPhase(0) := io.dataInPhase
+  // 根据模式,决定象限映射方式
+  val good :: plus90 :: minus90 :: Nil = Enum(3)
+  val plusOrMinus = WireInit(plus90)
+  val phase = WireInit(good)
+  if(approachingMode == "R"){ // 旋转模式下依据theta做相位映射
+    plusOrMinus := Mux(io.dataInPhase.get > ZERO, plus90 , minus90)
+    phase := Mux((io.dataInPhase.get.abs()) < halfPi, good, plusOrMinus)
+  }else{ // 向量模式下依据x,y做相位映射
+    plusOrMinus := Mux(io.dataInY.get > ZERO, minus90, plus90)
+    phase := Mux(io.dataInX.get > ZERO, good, plusOrMinus)
+  }
+
+  val xBeforeMap = io.dataInX.getOrElse(1.0.F(widthIn.W, (widthIn - 3).BP))
+  val yBeforeMap = io.dataInY.getOrElse(0.0.F(widthIn.W, (widthIn - 3).BP))
+  val phaseBeforeMap = io.dataInPhase.getOrElse(0.0.F(widthIn.W, (widthIn - 3).BP))
+
+  when(phase === good){
+    regsX(0) := xBeforeMap
+    regsY(0) := yBeforeMap
+    regsPhase(0) := phaseBeforeMap
+  }.elsewhen(phase === plus90){
+    regsX(0) := ZERO - yBeforeMap
+    regsY(0) := xBeforeMap
+    regsPhase(0) := phaseBeforeMap - halfPi
+  }.otherwise{ // minus90
+    regsX(0) := yBeforeMap
+    regsY(0) := ZERO - xBeforeMap
+    regsPhase(0) := phaseBeforeMap + halfPi
+  }
 
   for (i <- 1 to iterations) {
 
@@ -46,13 +90,24 @@ class CORDIC(mode: String = "rotate", arch: String = "pipelined",
     shiftedX := regsX(i - 1) >> i << 1
     val shiftedY = Wire(dataInT)
     shiftedY := regsY(i - 1) >> i << 1
-    val overZero = regsPhase(i - 1) > ZERO
 
-    regsX(i) := Mux(overZero, regsX(i - 1) - shiftedY, regsX(i - 1) + shiftedY)
-    regsY(i) := Mux(overZero, regsY(i - 1) + shiftedX, regsY(i - 1) - shiftedX)
-    regsPhase(i) := Mux(overZero, regsPhase(i - 1) - coeffcients(i - 1), regsPhase(i - 1) + coeffcients(i - 1))
+    val counterClockwise = Wire(Bool()) // 决定旋转方向
+    if (approachingMode == "R")
+      counterClockwise := regsPhase(i - 1) > ZERO
+    else // approachingMode is "V"
+      counterClockwise := regsY(i - 1) < ZERO
+
+    regsX(i) := Mux(counterClockwise, regsX(i - 1) - shiftedY, regsX(i - 1) + shiftedY)
+    regsY(i) := Mux(counterClockwise, regsY(i - 1) + shiftedX, regsY(i - 1) - shiftedX)
+    regsPhase(i) := Mux(counterClockwise, regsPhase(i - 1) - coeffcients(i - 1), regsPhase(i - 1) + coeffcients(i - 1))
   }
 
-  io.dataOutX := regsX.last * CORDICutil.getCartesianScaleComplment(iterations).F(widthOut.W, (widthOut - 3).BP)
-  io.dataOutY := regsY.last * CORDICutil.getCartesianScaleComplment(iterations).F(widthOut.W, (widthOut - 3).BP)
+  val scaleConplement = getCartesianScaleComplment(iterations).F(widthOut.W, (widthOut - 3).BP)
+
+  if(!io.dataOutX.equals(None))
+  io.dataOutX.get := regsX.last * scaleConplement
+  if(!io.dataOutY.equals(None))
+  io.dataOutY.get := regsY.last * scaleConplement
+  if (!io.dataOutPhase.equals(None))
+    io.dataOutPhase.get := regsPhase.last
 }
