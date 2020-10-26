@@ -34,11 +34,11 @@ set rt::rc [catch {
 
     set rt::useElabCache false
     if {$rt::useElabCache == false} {
-      rt::read_verilog E:/LtrProjects/SharedProjects/my_chisel/FirFilter.v
+      rt::read_verilog E:/LtrProjects/SharedProjects/my_chisel/FIR.FirFilter.v
       rt::filesetChecksum
     }
     rt::set_parameter usePostFindUniquification false
-    set rt::top FirFilter
+    set rt::top FIR.FirFilter
     rt::set_parameter enableIncremental true
     rt::set_parameter markDebugPreservationLevel "enable"
     set rt::reportTiming false

@@ -1,23 +1,8 @@
-[error] java.lang.ClassNotFoundException: buildCORDIC
-[error] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
-[error] 	at sbt.internal.ManagedClassLoader.findClass(ManagedClassLoader.java:102)
-[error] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-[error] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-[error] 	at java.lang.Class.forName0(Native Method)
-[error] 	at java.lang.Class.forName(Class.java:348)
-[error] 	at sbt.Run.getMainMethod(Run.scala:150)
-[error] 	at sbt.Run.execute$1(Run.scala:81)
-[error] 	at sbt.Run.$anonfun$runWithLoader$4(Run.scala:102)
-[error] 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
-[error] 	at scala.util.Try$.apply(Try.scala:213)
-[error] 	at sbt.Run.directExecute$1(Run.scala:102)
-[error] 	at sbt.Run.runWithLoader(Run.scala:111)
-[error] 	at sbt.Defaults$.$anonfun$bgRunMainTask$7(Defaults.scala:1764)
-[error] 	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1735)
-[error] 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
-[error] 	at scala.util.Try$.apply(Try.scala:213)
-[error] 	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:364)
-[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-[error] 	at java.lang.Thread.run(Thread.java:748)
-[error] (Compile / runMain) java.lang.ClassNotFoundException: buildCORDIC
+[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module BRAMGen] Combinational loop detected:
+[error] BRAMGen.io_dout
+[error] BRAMGen._GEN_8	 @[BRAM.scala 18:16]
+[error] BRAMGen.io_dout	 @[BRAM.scala 19:13 BRAM.scala 24:13]
+[error] (Compile / runMain) firrtl.transforms.CheckCombLoops$CombLoopException: : [module BRAMGen] Combinational loop detected:
+[error] BRAMGen.io_dout
+[error] BRAMGen._GEN_8	 @[BRAM.scala 18:16]
+[error] BRAMGen.io_dout	 @[BRAM.scala 19:13 BRAM.scala 24:13]

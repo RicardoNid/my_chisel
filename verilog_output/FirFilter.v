@@ -1,4 +1,4 @@
-module FirFilter(
+module FIR.FirFilter(
   input        clock,
   input        reset,
   input  [7:0] io_in,
@@ -10,18 +10,18 @@ module FirFilter(
   reg [31:0] _RAND_2;
   reg [31:0] _RAND_3;
 `endif // RANDOMIZE_REG_INIT
-  reg [7:0] _T__0; // @[FirFilter.scala 14:17]
-  reg [7:0] _T__1; // @[FirFilter.scala 14:17]
-  reg [7:0] _T__2; // @[FirFilter.scala 14:17]
-  reg [7:0] _T__3; // @[FirFilter.scala 14:17]
-  wire [8:0] _T_1 = _T__0 * 8'h1; // @[FirFilter.scala 19:63]
-  wire [8:0] _T_2 = _T__1 * 8'h1; // @[FirFilter.scala 19:63]
-  wire [8:0] _T_3 = _T__2 * 8'h1; // @[FirFilter.scala 19:63]
-  wire [8:0] _T_4 = _T__3 * 8'h1; // @[FirFilter.scala 19:63]
-  wire [8:0] _T_7 = _T_1 + _T_2; // @[FirFilter.scala 20:33]
-  wire [8:0] _T_9 = _T_7 + _T_3; // @[FirFilter.scala 20:33]
-  wire [8:0] _T_11 = _T_9 + _T_4; // @[FirFilter.scala 20:33]
-  assign io_out = _T_11[7:0]; // @[FirFilter.scala 20:12]
+  reg [7:0] _T__0; // @[FIR.FirFilter.scala 14:17]
+  reg [7:0] _T__1; // @[FIR.FirFilter.scala 14:17]
+  reg [7:0] _T__2; // @[FIR.FirFilter.scala 14:17]
+  reg [7:0] _T__3; // @[FIR.FirFilter.scala 14:17]
+  wire [8:0] _T_1 = _T__0 * 8'h1; // @[FIR.FirFilter.scala 19:63]
+  wire [8:0] _T_2 = _T__1 * 8'h1; // @[FIR.FirFilter.scala 19:63]
+  wire [8:0] _T_3 = _T__2 * 8'h1; // @[FIR.FirFilter.scala 19:63]
+  wire [8:0] _T_4 = _T__3 * 8'h1; // @[FIR.FirFilter.scala 19:63]
+  wire [8:0] _T_7 = _T_1 + _T_2; // @[FIR.FirFilter.scala 20:33]
+  wire [8:0] _T_9 = _T_7 + _T_3; // @[FIR.FirFilter.scala 20:33]
+  wire [8:0] _T_11 = _T_9 + _T_4; // @[FIR.FirFilter.scala 20:33]
+  assign io_out = _T_11[7:0]; // @[FIR.FirFilter.scala 20:12]
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
 `define RANDOMIZE
 `endif

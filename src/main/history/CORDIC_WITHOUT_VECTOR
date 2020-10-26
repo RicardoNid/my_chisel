@@ -7,7 +7,7 @@ import chisel3.experimental.FixedPoint
 
 // 在实现各种功能模式之后,应该再通过柯里化,将常用功能重新命名
 
-class CORDIC(mode: String = "rotate", arch: String = "pipelined",
+class CORDIC.CORDIC(mode: String = "rotate", arch: String = "pipelined",
              widthIn: Int = 10,  iterations: Int = 20, widthPhase: Int = 30) extends Module {
 
   val widthOut: Int = widthIn + iterations

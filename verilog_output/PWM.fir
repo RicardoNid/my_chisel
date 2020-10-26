@@ -1,0 +1,46 @@
+;buildInfoPackage: chisel3, version: 3.3.1, scalaVersion: 2.12.11, sbtVersion: 1.3.10
+circuit PWM : 
+  module PWM : 
+    input clock : Clock
+    input reset : UInt<1>
+    output io : {sig : UInt<1>}
+    
+    reg countReg : UInt<17>, clock with : (reset => (reset, UInt<17>("h00"))) @[PWM.scala 19:25]
+    reg countUpReg : UInt<1>, clock with : (reset => (reset, UInt<1>("h01"))) @[PWM.scala 20:27]
+    node _T = eq(countReg, UInt<27>("h05f5e100")) @[PWM.scala 23:17]
+    when _T : @[PWM.scala 23:34]
+      node _T_1 = sub(countReg, UInt<1>("h01")) @[PWM.scala 24:26]
+      node _T_2 = tail(_T_1, 1) @[PWM.scala 24:26]
+      countReg <= _T_2 @[PWM.scala 24:14]
+      countUpReg <= UInt<1>("h00") @[PWM.scala 25:16]
+      skip @[PWM.scala 23:34]
+    else : @[PWM.scala 26:32]
+      node _T_3 = eq(countReg, UInt<1>("h00")) @[PWM.scala 26:23]
+      when _T_3 : @[PWM.scala 26:32]
+        node _T_4 = add(countReg, UInt<1>("h01")) @[PWM.scala 27:26]
+        node _T_5 = tail(_T_4, 1) @[PWM.scala 27:26]
+        countReg <= _T_5 @[PWM.scala 27:14]
+        countUpReg <= UInt<1>("h01") @[PWM.scala 28:16]
+        skip @[PWM.scala 26:32]
+      else : @[PWM.scala 29:37]
+        node _T_6 = eq(countUpReg, UInt<1>("h01")) @[PWM.scala 29:25]
+        when _T_6 : @[PWM.scala 29:37]
+          node _T_7 = add(countReg, UInt<1>("h01")) @[PWM.scala 30:26]
+          node _T_8 = tail(_T_7, 1) @[PWM.scala 30:26]
+          countReg <= _T_8 @[PWM.scala 30:14]
+          skip @[PWM.scala 29:37]
+        else : @[PWM.scala 31:15]
+          node _T_9 = sub(countReg, UInt<1>("h01")) @[PWM.scala 32:26]
+          node _T_10 = tail(_T_9, 1) @[PWM.scala 32:26]
+          countReg <= _T_10 @[PWM.scala 32:14]
+          skip @[PWM.scala 31:15]
+    node _T_11 = shr(countReg, 10) @[PWM.scala 35:32]
+    reg _T_12 : UInt<17>, clock with : (reset => (reset, UInt<17>("h00"))) @[PWM.scala 11:24]
+    node _T_13 = eq(_T_12, UInt<17>("h01869f")) @[PWM.scala 12:24]
+    node _T_14 = add(_T_12, UInt<1>("h01")) @[PWM.scala 12:55]
+    node _T_15 = tail(_T_14, 1) @[PWM.scala 12:55]
+    node _T_16 = mux(_T_13, UInt<1>("h00"), _T_15) @[PWM.scala 12:17]
+    _T_12 <= _T_16 @[PWM.scala 12:11]
+    node _T_17 = lt(_T_12, _T_11) @[PWM.scala 13:11]
+    io.sig <= _T_17 @[PWM.scala 35:10]
+    

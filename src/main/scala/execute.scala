@@ -1,3 +1,6 @@
+import CORDIC.CORDIC
+import FIR.ScalaFirFilter
+import Xilinx.BRAMGen
 import chisel3._
 import chisel3.util._
 import chisel3.iotesters.{ChiselFlatSpec, Driver, PeekPokeTester}
@@ -30,15 +33,15 @@ object test extends App {
 
 object verilog extends App {
   (new ChiselStage).execute(Array("--target-dir", "./verilog_output"),
-    Seq(ChiselGeneratorAnnotation(() => new DMS(100, 10))))
+    Seq(ChiselGeneratorAnnotation(() => new BRAMGen())))
 }
 
 object verilogText extends App {
-  val verilogString = (new chisel3.stage.ChiselStage).emitVerilog(new DMS(100, 10))
+  val verilogString = (new chisel3.stage.ChiselStage).emitVerilog(new CORDIC())
   println(verilogString)
 }
 
 object help extends App {
   (new ChiselStage).execute(Array("--help"),
-    Seq(ChiselGeneratorAnnotation(() => new DMS(100, 10))))
+    Seq(ChiselGeneratorAnnotation(() => new CORDIC())))
 }

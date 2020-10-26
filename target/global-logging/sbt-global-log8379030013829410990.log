@@ -1,0 +1,8 @@
+[debug] > Exec(runMain verilog, None, None)
+[debug] Evaluating tasks: Compile / runMain
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Forcing garbage collection...
+[success] Total time: 6 s, completed Oct 24, 2020 5:02:03 PM
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

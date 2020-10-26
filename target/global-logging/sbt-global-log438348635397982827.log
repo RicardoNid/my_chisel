@@ -1,0 +1,12 @@
+[debug] > Exec(test:runMain testCORDIC, None, None)
+[debug] Evaluating tasks: Test / runMain
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] multiple main classes detected: run 'show discoveredMainClasses' to see the list
+[info] compiling 1 Scala source to E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\test-classes ...
+[info] done compiling
+[warn] multiple main classes detected: run 'show discoveredMainClasses' to see the list
+[debug] Forcing garbage collection...
+[success] Total time: 25 s, completed Oct 23, 2020 9:13:48 PM
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

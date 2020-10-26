@@ -19,7 +19,7 @@ top
 10.22 基本完成了CORDIC生成器的旋转和三角功能,以及相关测试
 
     设计使用方法
-        生成器:CORDIC.scala
+        生成器:CORDIC.CORDIC.scala
         辅助函数(生成CORDIC相位值和scaled factor):CORDICutil.scala
         testbench:testCORDIC.scala
         build(生成verilog):

@@ -1,3 +1,4 @@
+import CORDIC.CORDIC
 import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
 
 object buildCORDICrotate extends App {
@@ -9,6 +10,7 @@ object buildCORDICrotate extends App {
 object buildCORDICTranslate extends App {
   (new ChiselStage).execute(
     Array("--target-dir", "./verilog_output"),
-    Seq(ChiselGeneratorAnnotation(() => new CORDIC("translate"))))
+    Seq(ChiselGeneratorAnnotation(() => new CORDIC("translate", widthIn = 20, iterations = 30))))
 }
+
 

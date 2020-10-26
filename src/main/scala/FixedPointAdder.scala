@@ -5,8 +5,6 @@ import chisel3.experimental.FixedPoint
 
 import scala.reflect.macros.blackbox
 
-
-
 class FixedPointAdder extends Module {
 
   val dataInT = FixedPoint(10.W, 8.BP)
