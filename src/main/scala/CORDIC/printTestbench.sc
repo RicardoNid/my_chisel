@@ -1,4 +1,4 @@
-import java.lang.Math.{cos, pow, sin, sqrt}
+import java.lang.Math.{cos, log, pow, sin, sqrt}
 
 import chisel3.experimental.FixedPoint
 

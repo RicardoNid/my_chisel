@@ -41,17 +41,3 @@ class FirFilter(bitWidth: Int, coeffs: Seq[UInt], version: String = "standard") 
     io.out := zs_side(coeffs.length - 1)
   }
 }
-
-class ScalaFirFilter(coeffs: Seq[Int]){
-  var pseudoRegisters = List.fill(coeffs.length)(0)
-
-  // 用于模拟输入value一周期后产生的输出
-  def poke(value: Int): Int = {
-    pseudoRegisters = value::pseudoRegisters.take(coeffs.length - 1) // 移位
-    var accumulator = 0
-    for(i <- coeffs.indices){
-      accumulator += coeffs(i) * pseudoRegisters(i)
-    }
-    accumulator
-  }
-}

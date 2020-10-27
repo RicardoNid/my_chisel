@@ -1,9 +1,8 @@
 package FIR
-
-import chisel3.Mux
+import chisel3._
 import chisel3.experimental.FixedPoint
 
-import scala.math.{abs, cos, pow, round}
+import scala.math._
 
 object FIRutil {
   val TriangularWindow: (Int, Int) => Seq[Int] = (length, bitwidth) => {
