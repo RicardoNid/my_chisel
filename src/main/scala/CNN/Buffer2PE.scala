@@ -1,6 +1,6 @@
 package CNN
 
-import CNNutil._
+import dataflow._
 
 import chisel3._
 import chisel3.util._

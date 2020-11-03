@@ -9,7 +9,7 @@ object buildCNN extends App {
 }
 
 object doSomething extends App{
-  import CNNutil._
+  import dataflow._
   printInput()
   printRegs()
   printBuffer()

@@ -2,6 +2,8 @@
 [debug] Input file mappings:
 [debug] 	CNN
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN
+[debug] 	CNN\buf2pe.sc
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\buf2pe.sc
 [debug] 	CNN\Buffer2PE$$anon$1.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\Buffer2PE$$anon$1.class
 [debug] 	CNN\Buffer2PE.class
@@ -16,6 +18,14 @@
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\CNNutil$.class
 [debug] 	CNN\CNNutil.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\CNNutil.class
+[debug] 	CNN\ConstantMM$$anon$1.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\ConstantMM$$anon$1.class
+[debug] 	CNN\ConstantMM.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\ConstantMM.class
+[debug] 	CNN\ConstantMM4$$anon$2.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\ConstantMM4$$anon$2.class
+[debug] 	CNN\ConstantMM4.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\ConstantMM4.class
 [debug] 	CNN\CounterNormal$$anon$1.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\CounterNormal$$anon$1.class
 [debug] 	CNN\CounterNormal.class
@@ -24,6 +34,10 @@
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\CounterTable$$anon$1.class
 [debug] 	CNN\CounterTable.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\CounterTable.class
+[debug] 	CNN\dataflow$.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\dataflow$.class
+[debug] 	CNN\dataflow.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\dataflow.class
 [debug] 	CNN\doSomething$.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\doSomething$.class
 [debug] 	CNN\doSomething$delayedInit$body.class
@@ -32,12 +46,26 @@
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\doSomething.class
 [debug] 	CNN\PE$$anon$1.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\PE$$anon$1.class
+[debug] 	CNN\PE$.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\PE$.class
 [debug] 	CNN\PE.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\PE.class
 [debug] 	CNN\PE2Buffer$$anon$1.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\PE2Buffer$$anon$1.class
 [debug] 	CNN\PE2Buffer.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\PE2Buffer.class
+[debug] 	CNN\PlainWinograd$$anon$1.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\PlainWinograd$$anon$1.class
+[debug] 	CNN\PlainWinograd$.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\PlainWinograd$.class
+[debug] 	CNN\PlainWinograd.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\PlainWinograd.class
+[debug] 	CNN\winograd.sc
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\winograd.sc
+[debug] 	CNN\WinoUtil$.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\WinoUtil$.class
+[debug] 	CNN\WinoUtil.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CNN\WinoUtil.class
 [debug] 	Conwaylife$$anon$1.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\Conwaylife$$anon$1.class
 [debug] 	Conwaylife.class
@@ -48,6 +76,8 @@
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\ConwaylifeBetter.class
 [debug] 	CORDIC
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CORDIC
+[debug] 	CORDIC\beforeHyper.txt
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CORDIC\beforeHyper.txt
 [debug] 	CORDIC\CORDIC$$anon$1.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CORDIC\CORDIC$$anon$1.class
 [debug] 	CORDIC\CORDIC$.class
@@ -60,8 +90,12 @@
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CORDIC\CORDICutil$.class
 [debug] 	CORDIC\CORDICutil.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CORDIC\CORDICutil.class
+[debug] 	CORDIC\printTestbench.sc
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\CORDIC\printTestbench.sc
 [debug] 	data.txt
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\data.txt
+[debug] 	draft.sc
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\draft.sc
 [debug] 	FIFO$$anon$1.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\FIFO$$anon$1.class
 [debug] 	FIFO.class
@@ -142,4 +176,8 @@
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\Xilinx\BRAMGen$.class
 [debug] 	Xilinx\BRAMGen.class
 [debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\Xilinx\BRAMGen.class
+[debug] 	Xilinx\InterfaceType$.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\Xilinx\InterfaceType$.class
+[debug] 	Xilinx\InterfaceType.class
+[debug] 	  E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes\Xilinx\InterfaceType.class
 [debug] Done packaging.

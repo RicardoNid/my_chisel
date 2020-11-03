@@ -1,1 +1,1 @@
-["buildCORDICTranslate","buildCORDICrotate","testCORDIC","testFixedPointAdder"]
+["buildCORDICTranslate","buildCORDICrotate","testCORDIC","testConstantMM","testFixedPointAdder"]

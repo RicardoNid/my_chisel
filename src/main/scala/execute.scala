@@ -1,4 +1,4 @@
-import CNN.CounterNormal
+import CNN.{ConstantMM4, CounterNormal}
 import CORDIC.CORDIC
 import FIR.FirFilter
 import Xilinx.BRAMGen
@@ -13,7 +13,7 @@ import scala.math.Pi
 
 object verilog extends App {
   (new ChiselStage).execute(Array("--target-dir", "./verilog_output"),
-    Seq(ChiselGeneratorAnnotation(() => new CounterNormal)))
+    Seq(ChiselGeneratorAnnotation(() => new ConstantMM4)))
 }
 
 object verilogText extends App {

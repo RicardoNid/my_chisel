@@ -47,6 +47,10 @@ val defaultVersions = Seq(
 libraryDependencies ++= defaultVersions.map { case (dep, ver) =>
   "edu.berkeley.cs" %% dep % sys.props.getOrElse(dep + "Version", ver) }
 
+// https://mvnrepository.com/artifact/gov.nist.math/jama
+// library JAMA for matrix operations
+libraryDependencies += "gov.nist.math" % "jama" % "1.0.3"
+
 resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots"),
   Resolver.sonatypeRepo("releases")
