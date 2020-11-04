@@ -1,15 +1,31 @@
 [debug] [zinc] IncrementalCompile -----------
 [debug] IncrementalCompile.incrementalCompile
-[debug] previous = Stamps for: 22 products, 5 sources, 5 libraries
-[debug] current source = Set(${BASE}/src/test/scala/buildCORDIC.scala, ${BASE}/src/test/scala/testGEMM.scala, ${BASE}/src/test/scala/testCORDIC.scala, ${BASE}/src/test/scala/testFixedPointAdder.scala, ${BASE}/src/test/scala/testBRAM.scala)
-[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/test/scala/testGEMM.scala), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] previous = Stamps for: 26 products, 6 sources, 6 libraries
+[debug] current source = Set(${BASE}/src/test/scala/testSort4.scala, ${BASE}/src/test/scala/buildCORDIC.scala, ${BASE}/src/test/scala/testGEMM.scala, ${BASE}/src/test/scala/testCORDIC.scala, ${BASE}/src/test/scala/testFixedPointAdder.scala, ${BASE}/src/test/scala/testBRAM.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/test/scala/testGEMM.scala), unmodified = ...),Set(),Set(),API Changes: Set(NamesChange(CNN.ConstantMM,ModifiedNames(changes = UsedName(GEMM,[Default]))), NamesChange(CNN.CNNutil$,ModifiedNames(changes = UsedName(GEMM,[Default])))))
+[debug] The CNN.ConstantMM has the following regular definitions changed:
+[debug] 	UsedName(GEMM,[Default]).
+[debug] All member reference dependencies will be considered within this context.
+[debug] Files invalidated by inheriting from (external) CNN.ConstantMM: Set()
+[debug] Now invalidating by inheritance (internally).
+[debug] Getting direct dependencies of all classes transitively invalidated by inheritance.
+[debug] Getting classes that directly depend on (external) CNN.ConstantMM.
+[debug] None of the modified names appears in source file of testConstantMM. This dependency is not being considered for invalidation.
+[debug] The CNN.CNNutil$ has the following regular definitions changed:
+[debug] 	UsedName(GEMM,[Default]).
+[debug] All member reference dependencies will be considered within this context.
+[debug] Files invalidated by inheriting from (external) CNN.CNNutil$: Set()
+[debug] Now invalidating by inheritance (internally).
+[debug] Getting direct dependencies of all classes transitively invalidated by inheritance.
+[debug] Getting classes that directly depend on (external) CNN.CNNutil$.
+[debug] None of the modified names appears in source file of testConstantMM. This dependency is not being considered for invalidation.
 [debug] 
 [debug] Initial source changes:
 [debug] 	removed: Set()
 [debug] 	added: Set()
 [debug] 	modified: Set(${BASE}/src/test/scala/testGEMM.scala)
 [debug] Invalidated products: Set()
-[debug] External API changes: API Changes: Set()
+[debug] External API changes: API Changes: Set(NamesChange(CNN.ConstantMM,ModifiedNames(changes = UsedName(GEMM,[Default]))), NamesChange(CNN.CNNutil$,ModifiedNames(changes = UsedName(GEMM,[Default]))))
 [debug] Modified binary dependencies: Set()
 [debug] Initial directly invalidated classes: Set(testConstantMM)
 [debug] Sources indirectly invalidated by:
@@ -22,7 +38,7 @@
 [debug] compilation cycle 1
 [info] compiling 1 Scala source to E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\test-classes ...
 [debug] Getting org.scala-sbt:compiler-bridge_2.12:1.4.0:compile for Scala 2.12.10
-[debug] [zinc] Running cached compiler e636a5f for Scala compiler version 2.12.10
+[debug] [zinc] Running cached compiler 6c3badde for Scala compiler version 2.12.10
 [debug] [zinc] The Scala compiler is invoked with:
 [debug] 	-deprecation
 [debug] 	-feature
@@ -48,5 +64,5 @@
 [debug] Final step, transitive dependencies:
 [debug] 	Set()
 [debug] No classes were invalidated.
-[debug] Scala compilation took 0.2307514 s
+[debug] Scala compilation took 0.310539 s
 [info] done compiling

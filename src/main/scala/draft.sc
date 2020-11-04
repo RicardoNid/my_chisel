@@ -1,3 +1,5 @@
-val temp = Array.ofDim[Int](2,2)
+import basic.{Connect, MultiClock, Passthrough, Vector}
+import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
+import util._
 
-val flat = temp.flatten
+(new ChiselStage).execute(Array("--target-dir", "./verilog_output"), Seq(ChiselGeneratorAnnotation(() => new MultiClock)))

@@ -1,19 +1,14 @@
-import CNN.{ConstantMM4, CounterNormal}
+import CNN.WinoUtil.B
+import CNN.{ConstantMM, CounterNormal}
 import CORDIC.CORDIC
-import FIR.FirFilter
-import Xilinx.BRAMGen
-import chisel3._
-import chisel3.util._
-import chisel3.iotesters.{ChiselFlatSpec, Driver, PeekPokeTester}
+import basic.Connect
 import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
-
-import scala.math.Pi
 
 // 构建更好的task
 
 object verilog extends App {
   (new ChiselStage).execute(Array("--target-dir", "./verilog_output"),
-    Seq(ChiselGeneratorAnnotation(() => new ConstantMM4)))
+    Seq(ChiselGeneratorAnnotation(() => new ConstantMM(B))))
 }
 
 object verilogText extends App {
