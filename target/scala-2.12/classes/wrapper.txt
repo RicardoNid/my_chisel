@@ -1,9 +1,0 @@
-  wire clock;
-  wire io_load;
-  wire [255:0] io_data;
-  reg  [255:0] io_q;
-
-assign clock = clk;
-assign io_load = load;
-assign io_data = data;
-assign q = io_q;
