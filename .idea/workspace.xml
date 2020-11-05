@@ -8,7 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43355bc4-1398-4e7e-bf86-f341e2110460" name="Default Changelist" comment="ignore test_run_dir,压缩工程尺寸" />
+    <list default="true" id="43355bc4-1398-4e7e-bf86-f341e2110460" name="Default Changelist" comment="ignore target,压缩工程尺寸" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,7 +182,7 @@
       <workItem from="1604475021211" duration="322000" />
       <workItem from="1604475360710" duration="751000" />
       <workItem from="1604476130603" duration="5768000" />
-      <workItem from="1604496977308" duration="11323000" />
+      <workItem from="1604496977308" duration="11667000" />
     </task>
     <task id="LOCAL-00001" summary="增加了使用函数实现的常数矩阵乘法模块,之后要解决其类型问题,主要是Matrix(仿真和参数生成)的Double和电路中定点数的转换问题,当前使用的是整型">
       <created>1604370626076</created>
@@ -212,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604535868958</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ignore target,压缩工程尺寸">
+      <created>1604536168845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604536168845</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +251,8 @@
     <MESSAGE value="增加了使用函数实现的常数矩阵乘法模块,之后要解决其类型问题,主要是Matrix(仿真和参数生成)的Double和电路中定点数的转换问题,当前使用的是整型" />
     <MESSAGE value="将常数矩阵模块函数化,将尺寸参数化,更准确地说,你无需传入尺寸参数,只要信号尺寸和参数尺寸匹配即可" />
     <MESSAGE value="ignore test_run_dir,压缩工程尺寸" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignore test_run_dir,压缩工程尺寸" />
+    <MESSAGE value="ignore target,压缩工程尺寸" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore target,压缩工程尺寸" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="381" key="#Plugins" timestamp="1603196242373">
