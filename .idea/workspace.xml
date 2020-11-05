@@ -105,7 +105,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.16666667" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="7" />
@@ -122,19 +122,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\LtrProjects\SharedProjects\my_chisel\src\main\scala" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="ScalaProjectSettings">
     <option name="outputLimit" value="500" />
@@ -309,12 +296,16 @@
       <screen x="-1080" y="-207" width="1080" height="1880" />
     </state>
     <state x="-875" y="437" key="NewModule_or_Project.wizard/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@-1080.-207.1080.1880" timestamp="1603521523921" />
-    <state x="663" y="513" width="916" height="708" key="SettingsEditor" timestamp="1604509371860">
+    <state x="1081" y="460" key="RollbackChangesDialog" timestamp="1604537363864">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state x="1081" y="460" key="RollbackChangesDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604537363864" />
+    <state x="663" y="513" width="916" height="708" key="SettingsEditor" timestamp="1604537349151">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="172" y="301" key="SettingsEditor/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603374333340" />
     <state x="2689" y="404" width="916" height="708" key="SettingsEditor/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@2560.210.1920.1040" timestamp="1603373528946" />
-    <state x="663" y="513" key="SettingsEditor/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604509371860" />
+    <state x="663" y="513" key="SettingsEditor/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604537349151" />
     <state x="856" y="447" key="SettingsEditor/0.40.2560.1400/-1080.-263.1080.1880@0.40.2560.1400" timestamp="1604457069916" />
     <state x="174" y="262" key="SettingsEditor/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@-1080.-207.1080.1880" timestamp="1603026265487" />
     <state x="856" y="447" width="998" height="847" key="SettingsEditor/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1604135900972" />
