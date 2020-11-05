@@ -50,6 +50,10 @@ libraryDependencies ++= defaultVersions.map { case (dep, ver) =>
 // https://mvnrepository.com/artifact/gov.nist.math/jama
 // library JAMA for matrix operations
 libraryDependencies += "gov.nist.math" % "jama" % "1.0.3"
+// https://mvnrepository.com/artifact/org.scalanlp/breeze
+// library Breeze for numpy-like opertions
+libraryDependencies += "org.scalanlp" %% "breeze" % "1.1"
+
 
 resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots"),

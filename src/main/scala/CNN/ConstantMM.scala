@@ -2,11 +2,11 @@
 
 package CNN
 
-import Jama.Matrix
+import CNN.CNNutil.GEMM
+import breeze.linalg.DenseMatrix
 import chisel3._
-import CNNutil.GEMM
 
-class ConstantMM(coeff: Matrix) extends Module {
+class ConstantMM(coeff: DenseMatrix[Double]) extends Module {
   val io = IO(new Bundle {
     val in = Input(Vec(4, Vec(4, SInt(8.W))))
     val out = Output(Vec(4, Vec(4, SInt(8.W))))

@@ -1,4 +1,5 @@
-[debug] downloaded https://repo1.maven.org/maven2/gov/nist/math/jama/1.0.3/jama-1.0.3.pom
-[debug] downloaded https://repo1.maven.org/maven2/gov/nist/math/jama/1.0.3/jama-1.0.3.jar
-[debug] downloaded https://repo1.maven.org/maven2/gov/nist/math/jama/1.0.3/jama-1.0.3-sources.jar
-[debug] downloaded https://repo1.maven.org/maven2/gov/nist/math/jama/1.0.3/jama-1.0.3-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/scalanlp/breeze_2.12/1.1/breeze_2.12-1.1.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.12/1.1/breeze-macros_2.12-1.1-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/scalanlp/breeze_2.12/1.1/breeze_2.12-1.1-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.12/1.1/breeze-macros_2.12-1.1-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/scalanlp/breeze_2.12/1.1/breeze_2.12-1.1-javadoc.jar

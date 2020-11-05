@@ -1,4 +1,4 @@
-import CNN.WinoUtil.B
+import CNN.WinoUtil._
 import CNN.{ConstantMM, CounterNormal}
 import CORDIC.CORDIC
 import basic.Connect
@@ -7,8 +7,8 @@ import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
 // 构建更好的task
 
 object verilog extends App {
-  (new ChiselStage).execute(Array("--target-dir", "./verilog_output"),
-    Seq(ChiselGeneratorAnnotation(() => new ConstantMM(B))))
+  (new ChiselStage).execute(Array("--target-dir", "./target/verilog_output"),
+    Seq(ChiselGeneratorAnnotation(() => new ConstantMM(G))))
 }
 
 object verilogText extends App {
