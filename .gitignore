@@ -1,1 +1,6 @@
 /test_run_dir/
+/target/bg-jobs/
+/target/global-logging/
+/target/scala-2.12/
+/target/streams/
+/target/task-temp-directory/
