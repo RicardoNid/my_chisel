@@ -1,9 +1,0 @@
-[debug] > Exec(test:runMain testCORDIC, None, None)
-[debug] Evaluating tasks: Test / runMain
-[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
-[warn] multiple main classes detected: run 'show discoveredMainClasses' to see the list
-[warn] multiple main classes detected: run 'show discoveredMainClasses' to see the list
-[success] Total time: 13 s, completed Oct 26, 2020 2:54:44 PM
-[debug] > Exec(idea-shell, None, None)
-[debug] > Exec(, None, None)
-[debug] > Exec(idea-shell, None, None)

@@ -1,9 +1,0 @@
-[debug] > Exec(test:runMain help, None, None)
-[debug] Evaluating tasks: Test / runMain
-[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
-[info] compiling 1 Scala source to E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\classes ...
-[info] done compiling
-[warn] multiple main classes detected: run 'show discoveredMainClasses' to see the list
-[info] compiling 1 Scala source to E:\LtrProjects\SharedProjects\my_chisel\target\scala-2.12\test-classes ...
-[info] done compiling
-[warn] multiple main classes detected: run 'show discoveredMainClasses' to see the list
