@@ -1,196 +1,23 @@
-[error] firrtl.passes.PassExceptions: 
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__1_1
-[error] ConstantMM._T_94	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_95	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_96	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__1_1	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__0_2
-[error] ConstantMM._T_46	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_47	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_48	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__0_2	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__0_0
-[error] ConstantMM._T_14	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_15	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_16	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__0_0	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__3_3
-[error] ConstantMM._T_254	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_255	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_256	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__3_3	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__3_0
-[error] ConstantMM._T_206	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_207	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_208	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__3_0	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__0_3
-[error] ConstantMM._T_62	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_63	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_64	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__0_3	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__1_3
-[error] ConstantMM._T_126	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_127	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_128	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__1_3	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__2_3
-[error] ConstantMM._T_190	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_191	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_192	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__2_3	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__2_0
-[error] ConstantMM._T_142	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_143	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_144	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__2_0	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__0_1
-[error] ConstantMM._T_30	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_31	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_32	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__0_1	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__3_1
-[error] ConstantMM._T_222	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_223	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_224	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__3_1	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__2_2
-[error] ConstantMM._T_174	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_175	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_176	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__2_2	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__2_1
-[error] ConstantMM._T_158	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_159	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_160	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__2_1	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__3_2
-[error] ConstantMM._T_238	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_239	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_240	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__3_2	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__1_2
-[error] ConstantMM._T_110	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_111	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_112	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__1_2	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__1_0
-[error] ConstantMM._T_78	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_79	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_80	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__1_0	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.passes.PassException: 16 errors detected!
-[error] (Compile / runMain) firrtl.passes.PassExceptions: 
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__1_1
-[error] ConstantMM._T_94	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_95	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_96	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__1_1	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__0_2
-[error] ConstantMM._T_46	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_47	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_48	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__0_2	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__0_0
-[error] ConstantMM._T_14	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_15	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_16	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__0_0	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__3_3
-[error] ConstantMM._T_254	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_255	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_256	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__3_3	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__3_0
-[error] ConstantMM._T_206	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_207	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_208	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__3_0	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__0_3
-[error] ConstantMM._T_62	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_63	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_64	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__0_3	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__1_3
-[error] ConstantMM._T_126	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_127	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_128	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__1_3	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__2_3
-[error] ConstantMM._T_190	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_191	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_192	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__2_3	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__2_0
-[error] ConstantMM._T_142	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_143	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_144	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__2_0	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__0_1
-[error] ConstantMM._T_30	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_31	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_32	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__0_1	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__3_1
-[error] ConstantMM._T_222	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_223	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_224	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__3_1	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__2_2
-[error] ConstantMM._T_174	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_175	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_176	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__2_2	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__2_1
-[error] ConstantMM._T_158	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_159	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_160	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__2_1	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__3_2
-[error] ConstantMM._T_238	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_239	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_240	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__3_2	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__1_2
-[error] ConstantMM._T_110	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_111	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_112	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__1_2	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.transforms.CheckCombLoops$CombLoopException: : [module ConstantMM] Combinational loop detected:
-[error] ConstantMM._T__1_0
-[error] ConstantMM._T_78	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_79	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T_80	 @[ConstantMM.scala 21:36]
-[error] ConstantMM._T__1_0	 @[ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20 ConstantMM.scala 21:20]
-[error] firrtl.passes.PassException: 16 errors detected!
+[error] java.lang.ClassNotFoundException: verilog
+[error] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+[error] 	at sbt.internal.ManagedClassLoader.findClass(ManagedClassLoader.java:102)
+[error] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+[error] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+[error] 	at java.lang.Class.forName0(Native Method)
+[error] 	at java.lang.Class.forName(Class.java:348)
+[error] 	at sbt.Run.getMainMethod(Run.scala:150)
+[error] 	at sbt.Run.execute$1(Run.scala:81)
+[error] 	at sbt.Run.$anonfun$runWithLoader$4(Run.scala:102)
+[error] 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+[error] 	at scala.util.Try$.apply(Try.scala:213)
+[error] 	at sbt.Run.directExecute$1(Run.scala:102)
+[error] 	at sbt.Run.runWithLoader(Run.scala:111)
+[error] 	at sbt.Defaults$.$anonfun$bgRunMainTask$7(Defaults.scala:1764)
+[error] 	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1735)
+[error] 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+[error] 	at scala.util.Try$.apply(Try.scala:213)
+[error] 	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:364)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[error] 	at java.lang.Thread.run(Thread.java:748)
+[error] (Compile / runMain) java.lang.ClassNotFoundException: verilog
