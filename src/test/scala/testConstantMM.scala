@@ -16,14 +16,11 @@ class testConstantMM extends FunSuite with DiagrammedAssertions {
             arr(i, j) = i * 4 + j
             poke(c.io.in(i)(j), i * 4 + j)
           }
-
-          println(arr.toString)
-
+          
           val matO = B * arr
-          println(matO.toString)
 
           for (i <- 0 until 4; j <- 0 until 4) {
-            assert(peek(c.io.out(i)(j)) != matO(i, j),
+            assert(peek(c.io.out(i)(j)) == matO(i, j),
               "yours: " + peek(c.io.out(i)(j)).toString + " gold: " + matO(i, j).toString)
           }
         }

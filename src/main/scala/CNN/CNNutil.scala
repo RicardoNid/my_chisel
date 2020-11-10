@@ -30,6 +30,5 @@ object CNNutil {
     }
     result
   }
-
 }
 

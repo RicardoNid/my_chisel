@@ -3,4 +3,8 @@
   <component name="ScalaProjectSettings">
     <option name="outputLimit" value="500" />
   </component>
+  <component name="WorksheetDefaultProjectSettings">
+    <option name="compilerProfileName" value="Default" />
+    <option name="moduleName" value="my_chisel" />
+  </component>
 </project>

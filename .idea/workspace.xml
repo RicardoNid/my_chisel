@@ -9,13 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43355bc4-1398-4e7e-bf86-f341e2110460" name="Default Changelist" comment="ignore target,压缩工程尺寸">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/CNN/LoopNests.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/CNN/PEArray.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/CNN/toeplitz.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$62e02a5b9955d5071381$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$62e02a5b9955d5071381.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$62e02a5b9955d5071381.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9f11cc1737b859341e69$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9f11cc1737b859341e69.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9f11cc1737b859341e69.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$437a078c75a5445f2803$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$437a078c75a5445f2803.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$437a078c75a5445f2803.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/CNNutil.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/CNNutil.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/testConstantMM.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/testConstantMM.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,35 +122,20 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.16666667" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="7" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\LtrProjects\SharedProjects\my_chisel\src\main\scala" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\verilog_output" />
       <recent name="E:\LtrProjects\SharedProjects\my_chisel\target" />
       <recent name="E:\LtrProjects\SharedProjects\my_chisel\src\main\scala\CNN" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\LtrProjects\SharedProjects\my_chisel\src\main\scala" />
+    </key>
   </component>
   <component name="ScalaProjectSettings">
     <option name="outputLimit" value="500" />
@@ -198,7 +187,10 @@
       <workItem from="1604715057374" duration="11000" />
       <workItem from="1604715081913" duration="78000" />
       <workItem from="1604715170448" duration="3843000" />
-      <workItem from="1604720638008" duration="195000" />
+      <workItem from="1604720638008" duration="4686000" />
+      <workItem from="1604837047246" duration="2253000" />
+      <workItem from="1604935153749" duration="6228000" />
+      <workItem from="1604972111186" duration="3632000" />
     </task>
     <task id="LOCAL-00001" summary="增加了使用函数实现的常数矩阵乘法模块,之后要解决其类型问题,主要是Matrix(仿真和参数生成)的Double和电路中定点数的转换问题,当前使用的是整型">
       <created>1604370626076</created>
@@ -330,7 +322,7 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="1081" y="460" key="RollbackChangesDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604537363864" />
-    <state x="663" y="513" width="916" height="708" key="SettingsEditor" timestamp="1604715271316">
+    <state x="663" y="513" width="916" height="708" key="SettingsEditor" timestamp="1604972096786">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="172" y="301" key="SettingsEditor/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603374333340" />
@@ -340,12 +332,16 @@
     <state x="174" y="262" key="SettingsEditor/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@-1080.-207.1080.1880" timestamp="1603026265487" />
     <state x="856" y="447" width="998" height="847" key="SettingsEditor/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1604135900972" />
     <state x="695" y="322" key="SettingsEditor/2560.210.1920.1040/-1080.-207.1080.1880/0.40.2560.1400@0.40.2560.1400" timestamp="1603250195691" />
-    <state x="663" y="513" key="SettingsEditor/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1604715271316" />
+    <state x="663" y="513" key="SettingsEditor/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1604972096786" />
     <state x="872" y="467" key="Vcs.Push.Dialog.v2" timestamp="1604535870418">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="872" y="439" key="Vcs.Push.Dialog.v2/0.0.2560.1440/-1080.-247.1080.1920@0.0.2560.1440" timestamp="1604370631070" />
     <state x="872" y="467" key="Vcs.Push.Dialog.v2/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604535870418" />
+    <state x="1143" y="583" key="cloudConfig.SelfSettingsDialog" timestamp="1604725126872">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state x="1143" y="583" key="cloudConfig.SelfSettingsDialog/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1604725126872" />
     <state x="756" y="328" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603640510890">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -368,11 +364,12 @@
       <screen x="2560" y="210" width="1920" height="1040" />
     </state>
     <state x="2696" y="347" key="run.anything.popup/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603381629961" />
-    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1604474955659">
+    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1604974309846">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604474955659" />
     <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1603685237765" />
+    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1604974309846" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="compilerProfileName" value="Default" />
