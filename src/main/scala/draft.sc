@@ -1,5 +1,3 @@
-import basic.{Connect, MultiClock, Passthrough, Vector}
-import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
-import util._
-
-(new ChiselStage).execute(Array("--target-dir", "./verilog_output"), Seq(ChiselGeneratorAnnotation(() => new MultiClock)))
+import scala.util.Random
+val random = new Random(42)
+val coeff145 = Array.ofDim[Int](145).map(_ => random.nextInt() % 10000)

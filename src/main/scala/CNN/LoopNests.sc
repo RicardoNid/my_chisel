@@ -37,36 +37,36 @@ val MP = 1;
 val M1 = MT / MP
 val CP = 1;
 val C1 = CT / CP
-val RP = 1;
+val RP = 3;
 val R1 = RT / RP
-val SP = 1;
+val SP = 3;
 val S1 = ST / SP
 val PP = 1;
 val P1 = PT / PP
 val QP = 1;
 val Q1 = QT / QP
 
-val input = Array.ofDim[Float](N, C, H, W) // 采用和pytorch一致的NCHW layout
-val filter = Array.ofDim[Float](M, C, R, S)
-val output = Array.ofDim[Float](N, M, P, Q)
+var input = Array.ofDim[Double](N, C, H, W) // 采用和pytorch一致的NCHW layout
+var filter = Array.ofDim[Double](M, C, R, S)
+var output = Array.ofDim[Double](N, M, P, Q)
 
-val initialized_input = input.map(_.map(_.map(_.map(_ => 1))))
-val initialized_filter = filter.map(_.map(_.map(_.map(_ => 1))))
+input = input.map(_.map(_.map(_.map(_ => 1.0))))
+filter = filter.map(_.map(_.map(_.map(_ => 1.0))))
 
-val output1 = output.map(_.map(_.map(_.map(_ => 0))))
-val output2 = output.map(_.map(_.map(_.map(_ => 0))))
-val output3 = output.map(_.map(_.map(_.map(_ => 0))))
+val output1 = output.map(_.map(_.map(_.map(_ => 0.0))))
+val output2 = output.map(_.map(_.map(_.map(_ => 0.0))))
+val output3 = output.map(_.map(_.map(_.map(_ => 0.0))))
 
 val paddedInput = (n: Int, c: Int, h: Int, w: Int) => {
   if (h < 0 || h >= H || w < 0 || w >= W) 0
-  else initialized_input(n)(c)(h)(w)
+  else input(n)(c)(h)(w)
 }
 
 // version1 没有tiling和并行,只有interchange,特别地,使用这个版本作为ground truth
 for (n <- 0 until N; m <- 0 until M; c <- 0 until C;
      p <- 0 until P; q <- 0 until Q; // 值得注意的是,在loop nests中,总是遍历PQ,而非HW
      r <- 0 until R; s <- 0 until S) {
-  output1(n)(m)(p)(q) += paddedInput(n, c, p + r - PADDING, q + s - PADDING) * initialized_filter(m)(c)(r)(s)
+  output1(n)(m)(p)(q) += paddedInput(n, c, p + r - PADDING, q + s - PADDING) * filter(m)(c)(r)(s)
 }
 
 // version2,引入tiling,使用"下标"代表所属内存层次
@@ -87,10 +87,21 @@ for (n0 <- 0 until N0; m0 <- 0 until M0; c0 <- 0 until C0;
   val s = s0 * ST + sT
   val p = p0 * PT + pT
   val q = q0 * QT + qT
-  output2(n)(m)(p)(q) += paddedInput(n, c, p + r - PADDING, q + s - PADDING) * initialized_filter(m)(c)(r)(s)
+  output2(n)(m)(p)(q) += paddedInput(n, c, p + r - PADDING, q + s - PADDING) * filter(m)(c)(r)(s)
 }
 
 // version3(full version),引入unroll,使用"下标"代表并行
+
+// 记录并行消费/产生的数据
+// scala Array最多支持五维,要想办法裁剪尺寸 = 1的维度
+// var parallelInput = Array.ofDim[Double](NP, MP, CP, RP, SP, PP, QP)
+
+// todo : 对于非标准卷积运算,如深度可分离卷积,要制作相应版本
+
+// 并行记录器
+var parallelInput = Array.ofDim[String](RP, SP)
+var parallelFilter = Array.ofDim[String](RP, SP)
+var parallelOutput = Array.ofDim[String](RP, SP)
 
 for (n0 <- 0 until N0;
      m0 <- 0 until M0;
@@ -123,7 +134,25 @@ for (n0 <- 0 until N0;
   val s = s0 * ST + s1 * SP + sP
   val p = p0 * PT + p1 * PP + pP
   val q = q0 * QT + q1 * QP + qP
-  output3(n)(m)(p)(q) += paddedInput(n, c, p + r - PADDING, q + s - PADDING) * initialized_filter(m)(c)(r)(s)
+  output3(n)(m)(p)(q) += paddedInput(n, c, p + r - PADDING, q + s - PADDING) * filter(m)(c)(r)(s)
+
+  // 输出和重置并行记录器
+  if (nP == 0 && mP == 0 && cP == 0 && rP == 0 && sP == 0 && pP == 0 && qP == 0) {
+    println("input\n" + parallelInput.map(_.mkString(" ")).mkString("\n"))
+    //    println("filter\n" + parallelFilter.map(_.mkString(" ")).mkString("\n"))
+    //    println("output\n" + parallelOutput.map(_.mkString(" ")).mkString("\n"))
+
+    parallelInput.map(_.map(_ => ""))
+    parallelFilter.map(_.map(_ => ""))
+    parallelOutput.map(_.map(_ => ""))
+  }
+
+  // 填充并行记录器
+  parallelInput(rP)(sP) = "(" + Array(p + r - PADDING, q + s - PADDING).mkString(" ") + ")"
+  // parallelFilter(rP)(sP) = "(" + Array(r, s).mkString(" ") + ")"
+  // parallelOutput(rP)(sP) = "(" + Array(p, q).mkString(" ") + ")"
+
+
 }
 
 output1
@@ -133,5 +162,6 @@ output3
 // todo : 描述full version中,循环顺序的规则
 // todo : 编写Ma Yufei 2018 循环
 // todo : 编写坐标类和带逐周期profile输出的full verision循环
+// todo : 裁剪尺寸 = 1的维度
 // 层次0上看对DRAM的访存,层次1上看对buffer的访存,层次P上看核设计核并行度,在脚本中,可以通过条件+输出来模拟
 
