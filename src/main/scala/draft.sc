@@ -1,3 +1,2 @@
-import scala.util.Random
-val random = new Random(42)
-val coeff145 = Array.ofDim[Int](145).map(_ => random.nextInt() % 10000)
+val temp = Array(Array(1,2,3,4,5),Array(1,2,3,4,5))
+temp.zipWithIndex.map { case (row, i) => row.zipWithIndex.map { case (element, j) => (i,j)}}

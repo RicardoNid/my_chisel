@@ -1,59 +1,29 @@
 import FIR.FirFilter
-import chisel3._
-import chisel3.util._
+import breeze.linalg.DenseVector
 import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
+import chisel3.util._
+
 import scala.util.Random
 
 object buildFIR extends App {
+  val randGen = new Random(42)
+  val coeff145 = DenseVector(Array.ofDim[Double](145).map(_ => {
+    val value = randGen.nextInt % 100 + 500 // 避开较小的整数和2的幂,避免优化
+    if (isPow2(value)) (value + 13).toDouble
+    else value.toDouble
+  }
+  ))
+  //  val coeff145 = DenseVector.rand[Double](145) // rand产生的数值在0-1之间
 
-  val random = new Random(42)
-
-  val coeffGauss = Array(
-    1, 4, 7, 4, 1,
-    4, 16, 26, 16, 4,
-    7, 26, 41, 26, 7,
-    4, 16, 26, 16, 4,
-    1, 4, 7, 4, 1
-  ).map(_.S)
-
-  val coeffComplex = Array(
-    1598, 4143, 7705, 1612, 5478,
-    7845, 1542, 3324, 4516, 7891,
-    7613, 1214, 7845, 1243, 4789,
-    6895, 2463, 8454, 9123, 5124,
-    3652, 1424, 7845, 1421, 9631
-  ).map(_.S)
-
-  val coeff145 = Array.ofDim[Int](145).map(_ => (random.nextInt() % 10000).S)
-
-  val outputFile = "gaussFIR"
+  // 精准地产生了145个DSP，综合器思考了相当长的时间
   val outputDir = "./verilog_output"
-
-  (new ChiselStage).execute(
-    Array(
-      "--output-file", outputFile,
-      "--target-dir", outputDir
-    ),
-    Seq(ChiselGeneratorAnnotation(() => new FirFilter(17, coeffGauss, "systolic"))))
-
-  // 预期产生一个使用25个DSP slice的设计
-  // 事实亦是如此
-  val outputFileComplex = "complexFIR"
-  (new ChiselStage).execute(
-    Array(
-      "--output-file", outputFileComplex,
-      "--target-dir", outputDir
-    ),
-    Seq(ChiselGeneratorAnnotation(() => new FirFilter(17, coeffComplex, "systolic"))))
-
-  // 这个设计也精准地产生了145个DSP
   val outputFile145 = "FIR145"
   (new ChiselStage).execute(
     Array(
       "--output-file", outputFile145,
       "--target-dir", outputDir
     ),
-    Seq(ChiselGeneratorAnnotation(() => new FirFilter(17, coeff145, "systolic"))))
+    Seq(ChiselGeneratorAnnotation(() => new FirFilter(coeffs = coeff145, version = "systolic"))))
 }
 
 

@@ -9,13 +9,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43355bc4-1398-4e7e-bf86-f341e2110460" name="Default Changelist" comment="ignore target,压缩工程尺寸">
-      <change afterPath="$PROJECT_DIR$/src/test/scala/buildFIR.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/FIR/CrossClock.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/templates/BreezeFIR.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/templates/BreezeRandomInteger.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/templates/scala/List.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/testFirFilter.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/LoopNests.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/LoopNests.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/PEArray.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/PEArray.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/buf2pe.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/buf2pe.sc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/FirFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/FirFilter.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/draft.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/draft.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/buildFIR.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/buildFIR.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,13 +141,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -202,7 +210,8 @@
       <workItem from="1604935153749" duration="6228000" />
       <workItem from="1604972111186" duration="3632000" />
       <workItem from="1605013768643" duration="4418000" />
-      <workItem from="1605054451522" duration="13096000" />
+      <workItem from="1605054451522" duration="14292000" />
+      <workItem from="1605157317787" duration="24585000" />
     </task>
     <task id="LOCAL-00001" summary="增加了使用函数实现的常数矩阵乘法模块,之后要解决其类型问题,主要是Matrix(仿真和参数生成)的Double和电路中定点数的转换问题,当前使用的是整型">
       <created>1604370626076</created>
@@ -283,7 +292,7 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="760" y="314" key="#Project_Structure/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604474997093" />
-    <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1605061390556">
+    <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1605170253016">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="640" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1440/-1080.-247.1080.1920@0.0.2560.1440" timestamp="1604368791951" />
@@ -293,7 +302,7 @@
     <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604500216527" />
     <state x="-810" y="488" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@-1080.-207.1080.1880" timestamp="1603026706726" />
     <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1604136964659" />
-    <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605061390556" />
+    <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605170253016" />
     <state x="910" y="575" width="703" height="341" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1603250193958">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>

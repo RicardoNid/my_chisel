@@ -11,6 +11,9 @@ val STRIDE = 1
 val Nkx = 3
 val Nky = 3
 
+
+
+
 //val Pox = 2
 //val Poy = 2
 //val Nix = 15

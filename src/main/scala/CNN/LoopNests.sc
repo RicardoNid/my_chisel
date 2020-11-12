@@ -138,7 +138,7 @@ for (n0 <- 0 until N0;
 
   // 输出和重置并行记录器
   if (nP == 0 && mP == 0 && cP == 0 && rP == 0 && sP == 0 && pP == 0 && qP == 0) {
-    println("input\n" + parallelInput.map(_.mkString(" ")).mkString("\n"))
+    println("input\n" + parallelInput.map(_. mkString(" ")).mkString("\n"))
     //    println("filter\n" + parallelFilter.map(_.mkString(" ")).mkString("\n"))
     //    println("output\n" + parallelOutput.map(_.mkString(" ")).mkString("\n"))
 
