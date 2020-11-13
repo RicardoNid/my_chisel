@@ -9,15 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43355bc4-1398-4e7e-bf86-f341e2110460" name="Default Changelist" comment="ignore target,压缩工程尺寸">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/FIR/buildCrossClock.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/basic/Counter1024.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/basic/testCounter1024.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/testCrossClock.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/CrossClock.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/CrossClock.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/testCrossClock.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/testCrossClock.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +201,9 @@
       <workItem from="1605013768643" duration="4418000" />
       <workItem from="1605054451522" duration="14292000" />
       <workItem from="1605157317787" duration="24585000" />
-      <workItem from="1605223076198" duration="8371000" />
+      <workItem from="1605223076198" duration="12067000" />
+      <workItem from="1605274298266" duration="939000" />
+      <workItem from="1605276195566" duration="3392000" />
     </task>
     <task id="LOCAL-00001" summary="增加了使用函数实现的常数矩阵乘法模块,之后要解决其类型问题,主要是Matrix(仿真和参数生成)的Double和电路中定点数的转换问题,当前使用的是整型">
       <created>1604370626076</created>

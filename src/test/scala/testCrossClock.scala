@@ -9,7 +9,7 @@ class testCrossClock extends FunSuite with DiagrammedAssertions {
     Driver(() => new CrossClock) {
       c =>
         new PeekPokeTester(c) {
-          for (i <- 0 until 1024) {
+          for (i <- 0 until 10) {
             println(peek(c.io.out).toString)
             step(1)
           }

@@ -34,22 +34,24 @@ class CrossClock extends Module {
     io.out := data3
   }
 
+  val romSize = 10
+
   withClock(io.clk1) {
-    val BRAM1 = sinTable(64, 1024, Pi / 4)
+    val BRAM1 = sinTable(64, romSize, Pi / 4)
     val counter1 = Counter(1024)
     counter1.inc()
     val count1 = counter1.value
     data1 := BRAM1(count1)
   }
   withClock(io.clk2) {
-    val BRAM2 = sinTable(64, 1024, Pi / 2)
+    val BRAM2 = sinTable(64, romSize, Pi / 2)
     val counter2 = Counter(1024)
     counter2.inc()
     val count2 = counter2.value
     data2 := BRAM2(count2)
   }
   withClock(io.clk3) {
-    val BRAM3 = sinTable(64, 1024, 3 * Pi / 4)
+    val BRAM3 = sinTable(64, romSize, 3 * Pi / 4)
     val counter3 = Counter(1024)
     counter3.inc()
     val count3 = counter3.value
