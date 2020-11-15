@@ -1,48 +1,47 @@
+// 设计对标BRAM Generator IP
 package Xilinx
 
 import chisel3._
 import chisel3.util._
-import chisel3.iotesters.{ChiselFlatSpec, Driver, PeekPokeTester}
+import breeze.linalg._
+import breeze.signal._
+import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
 
-object InterfaceType extends Enumeration {
-  val SinglePortRAM = Value
-  val SimpleDualPortRAM = Value
-}
-
-import InterfaceType._
-
-
-// 要参数化的部分包括
-// 1.端口
-// 2.
-
-
-class BRAM(wData: Int = 32,
-           wAddr: Int = 10,
-           interfaceType: InterfaceType.Value = SinglePortRAM
-           // 端口模式
+class BRAM(
+            portAWidth: Int,
+            portADepth: Int,
+            portBWidth: Int,
+            portBDepth: Int
           ) extends Module {
+
   val io = IO(new Bundle {
-    val addr = Input(UInt(unsignedBitLength(wAddr).W))
-    val din = Input(UInt(wData.W))
-    val dout = Output(UInt(wData.W))
-    val ena = Input(Bool())
-    val wea = Input(Bool())
-    val reset = Input(Bool())
+    val portA = BRAMPort(portAWidth, portADepth)
+    val portB = BRAMPort(portBWidth, portBDepth)
   })
 
-  if (interfaceType == SinglePortRAM) {
-    val mem = SyncReadMem(wAddr, UInt(wData.W))
+  val mem = SyncReadMem(portADepth, UInt(portAWidth.W)) // 使用Mem和Reg(Vec)生成的verilog代码差别很大
 
-    when(io.ena) {
-      io.dout := mem.read(io.addr)
-      when(io.wea) {
-        mem.write(io.addr, io.din)
-      }
-    }.otherwise(io.dout := 0.U)
+  // todo : 解决双端口写数据冲突
+  withClock(io.portA.clk) {
+    when(io.portA.wea) {
+      mem.write(io.portA.addr, io.portA.din)
+    }
+    io.portA.dout := mem.read(io.portA.addr)
   }
-
+  withClock(io.portB.clk) {
+    when(io.portB.wea) {
+      mem.write(io.portB.addr, io.portB.din)
+    }
+    io.portB.dout := mem.read(io.portB.addr)
+  }
 }
 
-
-
+object BRAM {
+  def main(args: Array[String]): Unit = {
+    (new ChiselStage).execute(
+      Array(
+        "--target-dir", outputDir,
+        "--output-file", "BRAM"),
+      Seq(ChiselGeneratorAnnotation(() => new BRAM(16, 2048, 16, 2048))))
+  }
+}

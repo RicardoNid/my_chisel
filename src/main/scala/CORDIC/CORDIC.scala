@@ -1,8 +1,10 @@
 package CORDIC
+
 import Chisel.Enum
 import chisel3._
 import chisel3.experimental.FixedPoint
-import CORDICutil._
+import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
+
 import scala.math.{Pi, abs}
 
 // 在实现各种功能模式之后,应该再通过柯里化,将常用功能重新命名
@@ -132,4 +134,20 @@ class CORDIC(mode: String = "rotate", arch: String = "pipelined",
     io.dataOutY.get := regsY.last * scaleComplement
   if (!io.dataOutPhase.equals(None))
     io.dataOutPhase.get := regsPhase.last
+}
+
+object CORDIC {
+  def main(args: Array[String]): Unit = {
+    (new ChiselStage).execute(
+      Array(
+        "--target-dir", "./verilog_output",
+        "--output-file", "CORDIC_rotate"),
+      Seq(ChiselGeneratorAnnotation(() => new CORDIC("rotate"))))
+
+    (new ChiselStage).execute(
+      Array(
+        "--target-dir", "./verilog_output",
+        "--output-file", "CORDIC_rotate"),
+      Seq(ChiselGeneratorAnnotation(() => new CORDIC("translate", widthIn = 20, iterations = 30))))
+  }
 }

@@ -62,11 +62,13 @@ class CrossClock extends Module {
 }
 
 object CrossClock {
+  def main(args: Array[String]): Unit = {
     val outputFile = "CrossClock"
-  (new ChiselStage).execute(
-    Array(
-      "--output-file", outputFile,
-      "--target-dir", outputDir
-    ),
-    Seq(ChiselGeneratorAnnotation(() => new CrossClock)))
+    (new ChiselStage).execute(
+      Array(
+        "--output-file", outputFile,
+        "--target-dir", outputDir
+      ),
+      Seq(ChiselGeneratorAnnotation(() => new CrossClock)))
+  }
 }

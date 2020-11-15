@@ -1,9 +1,6 @@
 package Xilinx
 
 import chisel3._
-import chisel3.util._
-import breeze.linalg._
-import breeze.signal._
 import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
 
 class ShiftRegisters(depth:Int) extends Module {
@@ -14,6 +11,7 @@ class ShiftRegisters(depth:Int) extends Module {
   })
 
   io.out := chisel3.util.ShiftRegister(io.in, depth, io.ce)
+
 }
 
 object ShiftRegisters extends App {

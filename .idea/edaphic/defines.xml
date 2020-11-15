@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SVCompilerDirectivesDefines">
+    <option name="defines">
+      <map>
+        <entry key="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v">
+          <value>
+            <map>
+              <entry key="RANDOM">
+                <value>
+                  <list>
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+              <entry key="RANDOMIZE">
+                <value>
+                  <list>
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v">
+          <value>
+            <map>
+              <entry key="RANDOM">
+                <value>
+                  <list>
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+              <entry key="RANDOMIZE">
+                <value>
+                  <list>
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/verilog_output/FIR/Demo.v">
+          <value>
+            <map>
+              <entry key="RANDOM">
+                <value>
+                  <list>
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+              <entry key="RANDOMIZE">
+                <value>
+                  <list>
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v">
+          <value>
+            <map>
+              <entry key="RANDOM">
+                <value>
+                  <list>
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+              <entry key="RANDOMIZE">
+                <value>
+                  <list>
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v">
+          <value>
+            <map>
+              <entry key="RANDOM">
+                <value>
+                  <list>
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+              <entry key="RANDOMIZE">
+                <value>
+                  <list>
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v">
+          <value>
+            <map>
+              <entry key="RANDOM">
+                <value>
+                  <list>
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+              <entry key="RANDOMIZE">
+                <value>
+                  <list>
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v">
+          <value>
+            <map>
+              <entry key="RANDOM">
+                <value>
+                  <list>
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+              <entry key="RANDOMIZE">
+                <value>
+                  <list>
+                    <Body />
+                    <Body />
+                    <Body />
+                    <Body />
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="dependencies">
+      <map>
+        <entry key="FIRRTL_AFTER_INITIAL">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="FIRRTL_BEFORE_INITIAL">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="INIT_RANDOM">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RANDOM">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RANDOMIZE">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RANDOMIZE_DELAY">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RANDOMIZE_GARBAGE_ASSIGN">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RANDOMIZE_INVALID_ASSIGN">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RANDOMIZE_MEM_INIT">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RANDOMIZE_REG_INIT">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SYNTHESIS">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="VERILATOR">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/BRAM.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/Registers.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/ShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/XilinxBuildingBlocks/DynamicShiftRegisters.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/CrossClock.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/AsyncFIFO.v" />
+              <option value="$PROJECT_DIR$/verilog_output/FIR/Demo.v" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="status" value="NORMAL" />
+  </component>
+</project>

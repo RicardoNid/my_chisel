@@ -1,9 +1,10 @@
-import chisel3.Mux
+import chisel3.{Bool, Bundle, Clock, Input, Mux, Output, UInt}
 import chisel3.experimental.FixedPoint
 
 import scala.math.{Pi, abs, cos, pow, round}
 
 package object FIR {
+  //  val outputDir = "./verilog_output/FIR"
   val outputDir = "E:/LtrProjects/VivadoProjects/ZCU_efficient/ZCU_efficient.srcs/from_chisel/"
 
   val TriangularWindow: (Int, Int) => Seq[Int] = (length, bitwidth) => {

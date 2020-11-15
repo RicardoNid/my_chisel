@@ -7,7 +7,7 @@ import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
 import chisel3.util.isPow2
 import scala.util.Random
 
-// todo: 扩写这个class,增加可配置项 1.结构和流水方式 2.signed/unsigned
+// todo: 扩写这个class,增加可配置项 1.结构和流水方式 2.窗函数支持
 // 开发流程是接口->测试->设计->chisel测试->build
 class FirFilter(
                  bitWidthIn: Int = 27,
