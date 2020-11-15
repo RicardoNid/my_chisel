@@ -1,10 +1,11 @@
-package FIR
-import chisel3._
+import chisel3.Mux
 import chisel3.experimental.FixedPoint
 
-import scala.math._
+import scala.math.{Pi, abs, cos, pow, round}
 
-object FIRutil {
+package object FIR {
+  val outputDir = "E:/LtrProjects/VivadoProjects/ZCU_efficient/ZCU_efficient.srcs/from_chisel/"
+
   val TriangularWindow: (Int, Int) => Seq[Int] = (length, bitwidth) => {
     // formula :
     val raw_coeffs = (0 until length).map((x: Int) => 1 - abs((x.toDouble - (length - 1) / 2.0) / ((length - 1) / 2.0)))
@@ -19,9 +20,4 @@ object FIRutil {
     val scaled_coeffs = raw_coeffs.map((trans_2))
     scaled_coeffs
   }
-
-  // 在这里如果使用if,有何不同?
-  // 定点数比较产生的是chisel Bool,if无法使用
-  val Step: FixedPoint => FixedPoint = x => Mux(x <= 0.F(8.BP), 0.F(8.BP), 1.F(8.BP))
-  val ReLU: FixedPoint => FixedPoint = x => Mux(x <= 0.F(8.BP), 0.F(8.BP), x)
 }

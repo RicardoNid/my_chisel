@@ -1,3 +1,5 @@
+package basic
+
 import chisel3._
 
 class Conwaylife extends Module {

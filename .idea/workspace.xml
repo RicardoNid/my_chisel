@@ -9,9 +9,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43355bc4-1398-4e7e-bf86-f341e2110460" name="Default Changelist" comment="ignore target,压缩工程尺寸">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/FIR/buildFIR.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/FIR/package.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/Registers.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/ShiftRegisters.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/XilinxBuildingBlocks.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/package.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/Xilinx/testRegisters.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/Xilinx/testShiftRegisters.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Conwaylife.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/basic/Conwaylife.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ConwaylifeBetter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/basic/ConwaylifeBetter.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/CrossClock.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/CrossClock.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/testCrossClock.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/testCrossClock.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/FIRutil.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/FirFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/FirFilter.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/buildCrossClock.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/buildCrossClock.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Xilinx/BRAM.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/BRAM.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/basic/Neuron.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/basic/Neuron.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/draft.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/draft.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/util.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/util.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/templates/BreezeFIR.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/templates/BreezeFIR.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/templates/BreezeRandomInteger.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/templates/BreezeRandomInteger.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/templates/scala/List.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/templates/scala/List.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/buildFIR.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/testFirFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/testFirFilter.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,12 +97,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Scala Object" />
         <option value="package-info" />
-        <option value="Package Object" />
         <option value="Scala Class" />
-        <option value="ChiselModule" />
         <option value="Scala Worksheet" />
+        <option value="Scala Object" />
+        <option value="ChiselModule" />
+        <option value="ChiselPeekPokeTester" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -103,7 +127,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/scala" />
+    <property name="last_opened_file_path" value="E:/LtrProjects/SharedProjects/chisel/chisel-template" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -115,9 +139,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.16666667" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="7" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="basic" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\test\scala" />
       <recent name="E:\LtrProjects\SharedProjects\my_chisel\src\main\scala" />
@@ -126,6 +153,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\main\scala" />
       <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\verilog_output" />
       <recent name="E:\LtrProjects\SharedProjects\my_chisel\target" />
       <recent name="E:\LtrProjects\SharedProjects\my_chisel\src\main\scala\CNN" />
@@ -203,7 +231,9 @@
       <workItem from="1605157317787" duration="24585000" />
       <workItem from="1605223076198" duration="12067000" />
       <workItem from="1605274298266" duration="939000" />
-      <workItem from="1605276195566" duration="3392000" />
+      <workItem from="1605276195566" duration="13293000" />
+      <workItem from="1605336136649" duration="13068000" />
+      <workItem from="1605406726042" duration="1703000" />
     </task>
     <task id="LOCAL-00001" summary="增加了使用函数实现的常数矩阵乘法模块,之后要解决其类型问题,主要是Matrix(仿真和参数生成)的Double和电路中定点数的转换问题,当前使用的是整型">
       <created>1604370626076</created>
@@ -276,6 +306,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="ignore target,压缩工程尺寸" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="939" y="573" key="#HTTP_Proxy" timestamp="1605343917728">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="939" y="573" key="#HTTP_Proxy/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605343917728" />
     <state x="872" y="381" key="#Plugins" timestamp="1603196242373">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -284,8 +318,8 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="760" y="314" key="#Project_Structure/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604474997093" />
-    <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1605229640443">
-      <screen x="0" y="40" width="2560" height="1400" />
+    <state x="687" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1605408565989">
+      <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="640" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1440/-1080.-247.1080.1920@0.0.2560.1440" timestamp="1604368791951" />
     <state x="640" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1440/2560.170.1920.1080/-1080.-247.1080.1920@0.0.2560.1440" timestamp="1604335039664" />
@@ -294,7 +328,8 @@
     <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604500216527" />
     <state x="-810" y="488" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@-1080.-207.1080.1880" timestamp="1603026706726" />
     <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1604136964659" />
-    <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605229640443" />
+    <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605330726776" />
+    <state x="687" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605408565989" />
     <state x="910" y="575" width="703" height="341" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1603250193958">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -317,6 +352,11 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="907" y="428" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604474916842" />
+    <state x="981" y="560" width="447" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605330491813">
+      <screen x="0" y="40" width="2560" height="1400" />
+    </state>
+    <state x="981" y="560" width="447" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605330491813" />
+    <state x="3296" y="650" width="447" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@2560.264.1920.1040" timestamp="1605328013902" />
     <state x="693" y="49" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605229691712">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -325,13 +365,14 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="92" y="132" width="2376" height="1216" key="DiffContextDialog/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603369992161" />
-    <state x="1204" y="456" key="FileChooserDialogImpl" timestamp="1604715216750">
-      <screen x="0" y="40" width="2560" height="1400" />
+    <state x="1237" y="428" key="FileChooserDialogImpl" timestamp="1605350468211">
+      <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="1204" y="456" key="FileChooserDialogImpl/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@-1080.-207.1080.1880" timestamp="1603521497725" />
     <state x="1204" y="456" key="FileChooserDialogImpl/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1603547346738" />
     <state x="1060" y="495" key="FileChooserDialogImpl/2560.210.1920.1040/-1080.-207.1080.1880/0.40.2560.1400@0.40.2560.1400" timestamp="1603247783877" />
     <state x="1204" y="456" key="FileChooserDialogImpl/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1604715216750" />
+    <state x="1237" y="428" key="FileChooserDialogImpl/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605350468211" />
     <state x="-875" y="437" key="NewModule_or_Project.wizard" timestamp="1603521523921">
       <screen x="-1080" y="-207" width="1080" height="1880" />
     </state>
@@ -340,8 +381,8 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="1081" y="460" key="RollbackChangesDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604537363864" />
-    <state x="663" y="513" width="916" height="708" key="SettingsEditor" timestamp="1604972096786">
-      <screen x="0" y="40" width="2560" height="1400" />
+    <state x="710" y="492" width="916" height="729" key="SettingsEditor" timestamp="1605349018671">
+      <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="172" y="301" key="SettingsEditor/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603374333340" />
     <state x="2689" y="404" width="916" height="708" key="SettingsEditor/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@2560.210.1920.1040" timestamp="1603373528946" />
@@ -351,6 +392,7 @@
     <state x="856" y="447" width="998" height="847" key="SettingsEditor/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1604135900972" />
     <state x="695" y="322" key="SettingsEditor/2560.210.1920.1040/-1080.-207.1080.1880/0.40.2560.1400@0.40.2560.1400" timestamp="1603250195691" />
     <state x="663" y="513" key="SettingsEditor/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1604972096786" />
+    <state x="710" y="492" width="916" height="729" key="SettingsEditor/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605349018671" />
     <state x="872" y="467" key="Vcs.Push.Dialog.v2" timestamp="1604535870418">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -364,8 +406,8 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="756" y="328" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603640510890" />
-    <state x="-673" y="-270" width="556" height="1896" key="dock-window-1" timestamp="1604382626304">
-      <screen x="-1080" y="-247" width="1080" height="1920" />
+    <state x="3392" y="203" width="1582" height="974" key="dock-window-1" timestamp="1605407106633">
+      <screen x="2622" y="224" width="1858" height="1080" />
     </state>
     <state x="-673" y="-270" width="556" height="1896" key="dock-window-1/0.0.2560.1440/-1080.-247.1080.1920@0.0.2560.1440" timestamp="1604382626304" />
     <state x="2552" y="202" width="976" height="1056" key="dock-window-1/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@-1080.-207.1080.1880" timestamp="1603356857768" />
@@ -373,6 +415,8 @@
     <state x="-1060" y="-270" width="462" height="1027" maximized="true" key="dock-window-1/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@2560.210.1920.1040" timestamp="1603290989968" />
     <state x="802" y="40" width="860" height="1358" maximized="true" key="dock-window-1/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@-1080.-207.1080.1880" timestamp="1603037387095" />
     <state x="2552" y="202" width="976" height="1056" key="dock-window-1/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1604139481924" />
+    <state x="586" y="192" width="1582" height="974" key="dock-window-1/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@2560.264.1920.1040" timestamp="1605328525797" />
+    <state x="3392" y="203" width="1582" height="974" maximized="true" key="dock-window-1/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605336503483" />
     <state x="662" y="423" key="new project wizard" timestamp="1604497035682">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -383,13 +427,18 @@
     </state>
     <state x="2696" y="347" key="run.anything.popup/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603381629961" />
     <state x="181" y="224" key="run.anything.popup/0.40.2560.1400/2560.264.1920.1040/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605018814111" />
-    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1605018869096">
-      <screen x="0" y="40" width="2560" height="1400" />
+    <state x="609" y="396" width="1167" height="742" key="save.file.as.template.dialog" timestamp="1605347810636">
+      <screen x="62" y="0" width="2498" height="1440" />
+    </state>
+    <state x="609" y="396" width="1167" height="742" key="save.file.as.template.dialog/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605347810636" />
+    <state x="982" y="324" width="656" height="698" key="search.everywhere.popup" timestamp="1605347043653">
+      <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604474955659" />
     <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1603685237765" />
     <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/2560.264.1920.1040/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605018869096" />
     <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1604974309846" />
+    <state x="982" y="324" width="656" height="698" key="search.everywhere.popup/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605347043653" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="compilerProfileName" value="Default" />

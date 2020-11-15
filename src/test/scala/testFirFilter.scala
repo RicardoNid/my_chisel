@@ -24,10 +24,7 @@ class testFirFilter extends FunSuite with DiagrammedAssertions {
     Driver(() => new FirFilter(coeffs = kernel, version = "systolic")) {
       c =>
         new PeekPokeTester(c) {
-          poke(c.io.rst, 1) // "清理垃圾"
-          step(1)
           for (i <- 0 until input.length) {
-            if (i == 0) poke(c.io.rst, 0)
             pokeFixedPoint(c.io.in, input(i))
             outputList.append(peekFixedPoint(c.io.out))
             step(1)

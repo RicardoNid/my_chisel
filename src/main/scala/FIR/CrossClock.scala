@@ -1,7 +1,9 @@
 package FIR
 
 import chisel3._
+import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
 import chisel3.util._
+
 import scala.math.{Pi, round, sin}
 
 class CrossClock extends Module {
@@ -9,7 +11,7 @@ class CrossClock extends Module {
     val clk1 = Input(Clock())
     val clk2 = Input(Clock())
     val clk3 = Input(Clock())
-    val out = Output(SInt(32.W))
+    val out = Output(SInt(8.W))
   })
 
   def sinTable(amp: Double, n: Int, phase: Double): Vec[SInt] = {
@@ -34,7 +36,7 @@ class CrossClock extends Module {
     io.out := data3
   }
 
-  val romSize = 10
+  val romSize = 1024
 
   withClock(io.clk1) {
     val BRAM1 = sinTable(64, romSize, Pi / 4)
@@ -57,4 +59,14 @@ class CrossClock extends Module {
     val count3 = counter3.value
     data3 := BRAM3(count3)
   }
+}
+
+object CrossClock {
+    val outputFile = "CrossClock"
+  (new ChiselStage).execute(
+    Array(
+      "--output-file", outputFile,
+      "--target-dir", outputDir
+    ),
+    Seq(ChiselGeneratorAnnotation(() => new CrossClock)))
 }
