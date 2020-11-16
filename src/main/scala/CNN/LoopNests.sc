@@ -1,5 +1,9 @@
 import breeze.linalg._
 
+case class LoopNestParam(
+                        N:Int = 2, M:Int = 3, C:Int = 5,
+                        )
+
 // 采用eyeriss tutorial的符号系统
 // 层参数
 val N = 2 // batch size

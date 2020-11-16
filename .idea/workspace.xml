@@ -9,47 +9,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43355bc4-1398-4e7e-bf86-f341e2110460" name="Default Changelist" comment="ignore target,压缩工程尺寸">
-      <change afterPath="$PROJECT_DIR$/.idea/edaphic/defines.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/CORDIC/package.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/FIR/Demo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/DynamicShiftRegisters.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/basic/AsyncFIFO.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/basic/RocketAsyncQueue.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/basic/testFixedPointAdder.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/basic/testSort4.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/CNN/Ma/Ma.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/CNN/package.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/FIR/TinyDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/edaphic/defines.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/edaphic/defines.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CORDIC/CORDIC.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CORDIC/CORDIC.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CORDIC/CORDICutil.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FIFO.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/basic/FIFO.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/CrossClock.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/CrossClock.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/Buffer2PE.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/CNNutil.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/ConstantMM.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/ConstantMM.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/CounterNormal.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/basic/CounterNormal.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/CounterTable.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/basic/CounterTable.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/GCD.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/Wino/GCD.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/LoopNests.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/LoopNests.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/PE.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/PE2Buffer.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/PEArray.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/PlainWinograd.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/WinoUtil.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/Winograd.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/breeze.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/templates/breezeDemo.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/buf2pe.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/buildCNN.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/dataflow.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/jama.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/toeplitz.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/winograd.sc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/FirFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/FirFilter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/FirMore.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/buildCrossClock.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/package.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FSM.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/basic/FSM.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FSMs.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FixedPointAdder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/basic/FixedPointAdder.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Neuron.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/PWM.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/basic/PWM.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ShiftRegister.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Xilinx/BRAM.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/BRAM.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Xilinx/ShiftRegisters.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/ShiftRegisters.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Xilinx/XilinxBuildingBlocks.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/XilinxBuildingBlocks.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Xilinx/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/package.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/execute.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/routing.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/basic/routing.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/buildCORDIC.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/scalatest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/templates/scalatest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/testBRAM.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/Xilinx/testBRAM.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/testCORDIC.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/CORDIC/testCORDIC.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/testConstantMM.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/CNN/testConstantMM.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/testCrossClock.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/FIR/testCrossClock.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/testFirFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/FIR/testFirFilter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/testFixedPointAdder.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/testSort4.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/draft.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/draft.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/templates/scala/List.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/templates/List.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/CNN/testConstantMM.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/CNN/testConstantMM.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +146,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.16666667" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="7" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -169,26 +160,25 @@
       <recent name="E:\LtrProjects\SharedProjects\my_chisel\src\main\scala" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="FIR" />
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\main\scala\CNN\Wino" />
+      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\main\scala\templates" />
       <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\test\scala\CORDIC" />
       <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\main\scala" />
       <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\verilog_output" />
-      <recent name="E:\LtrProjects\SharedProjects\my_chisel\target" />
-      <recent name="E:\LtrProjects\SharedProjects\my_chisel\src\main\scala\CNN" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -257,6 +247,9 @@
       <workItem from="1605336136649" duration="13068000" />
       <workItem from="1605406726042" duration="7349000" />
       <workItem from="1605414956922" duration="16408000" />
+      <workItem from="1605452397992" duration="5392000" />
+      <workItem from="1605459499668" duration="3942000" />
+      <workItem from="1605490891756" duration="9346000" />
     </task>
     <task id="LOCAL-00001" summary="增加了使用函数实现的常数矩阵乘法模块,之后要解决其类型问题,主要是Matrix(仿真和参数生成)的Double和电路中定点数的转换问题,当前使用的是整型">
       <created>1604370626076</created>
@@ -341,8 +334,12 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="760" y="314" key="#Project_Structure/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604474997093" />
-    <state x="687" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1605430301036">
-      <screen x="62" y="0" width="2498" height="1440" />
+    <state x="971" y="279" key="#Scala" timestamp="1605495903823">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="971" y="279" key="#Scala/2560.224.1920.1080/0.0.2560.1440/-1080.-289.1080.1920@0.0.2560.1440" timestamp="1605495903823" />
+    <state x="641" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1605499184466">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="640" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1440/-1080.-247.1080.1920@0.0.2560.1440" timestamp="1604368791951" />
     <state x="640" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1440/2560.170.1920.1080/-1080.-247.1080.1920@0.0.2560.1440" timestamp="1604335039664" />
@@ -351,8 +348,9 @@
     <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604500216527" />
     <state x="-810" y="488" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@-1080.-207.1080.1880" timestamp="1603026706726" />
     <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1604136964659" />
+    <state x="641" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/2560.224.1920.1080/0.0.2560.1440/-1080.-289.1080.1920@0.0.2560.1440" timestamp="1605499184466" />
     <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605330726776" />
-    <state x="687" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605430301036" />
+    <state x="687" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605452515932" />
     <state x="910" y="575" width="703" height="341" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1603250193958">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -362,10 +360,11 @@
     </state>
     <state x="1026" y="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603797777235" />
     <state x="1026" y="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.2560.1400/-1080.-263.1080.1880@0.40.2560.1400" timestamp="1604454641685" />
-    <state x="991" y="542" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603685185143">
-      <screen x="0" y="40" width="2560" height="1400" />
+    <state x="1029" y="516" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605453190316">
+      <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="991" y="542" key="#com.intellij.fileTypes.FileTypeChooser/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1603685185143" />
+    <state x="1029" y="516" key="#com.intellij.fileTypes.FileTypeChooser/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605453190316" />
     <state x="1044" y="394" width="403" height="434" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1604474787990">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
@@ -375,12 +374,12 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="907" y="428" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604474916842" />
-    <state x="1019" y="535" width="447" height="282" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605431711294">
+    <state x="1019" y="535" width="447" height="282" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605454821149">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="981" y="560" width="447" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605330491813" />
     <state x="3296" y="650" width="447" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@2560.264.1920.1040" timestamp="1605328013902" />
-    <state x="1019" y="535" width="447" height="282" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605431711294" />
+    <state x="1019" y="535" width="447" height="282" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605454821149" />
     <state x="1087" y="599" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1605409561625">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -393,10 +392,11 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="1041" y="466" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605430337467" />
-    <state x="92" y="132" width="2376" height="1216" key="DiffContextDialog" timestamp="1603369992161">
-      <screen x="0" y="40" width="2560" height="1400" />
+    <state x="92" y="95" width="2376" height="1251" maximized="true" key="DiffContextDialog" timestamp="1605492030569">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="92" y="132" width="2376" height="1216" key="DiffContextDialog/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603369992161" />
+    <state x="92" y="95" width="2376" height="1251" maximized="true" key="DiffContextDialog/2560.224.1920.1080/0.0.2560.1440/-1080.-289.1080.1920@0.0.2560.1440" timestamp="1605492030569" />
     <state x="1237" y="428" key="FileChooserDialogImpl" timestamp="1605350468211">
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
@@ -413,8 +413,8 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="1081" y="460" key="RollbackChangesDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604537363864" />
-    <state x="319" y="73" width="1567" height="1118" key="SettingsEditor" timestamp="1605430097822">
-      <screen x="62" y="0" width="2498" height="1440" />
+    <state x="263" y="73" width="1567" height="1118" key="SettingsEditor" timestamp="1605497393535">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="172" y="301" key="SettingsEditor/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603374333340" />
     <state x="2689" y="404" width="916" height="708" key="SettingsEditor/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@2560.210.1920.1040" timestamp="1603373528946" />
@@ -423,6 +423,7 @@
     <state x="174" y="262" key="SettingsEditor/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@-1080.-207.1080.1880" timestamp="1603026265487" />
     <state x="856" y="447" width="998" height="847" key="SettingsEditor/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1604135900972" />
     <state x="695" y="322" key="SettingsEditor/2560.210.1920.1040/-1080.-207.1080.1880/0.40.2560.1400@0.40.2560.1400" timestamp="1603250195691" />
+    <state x="263" y="73" key="SettingsEditor/2560.224.1920.1080/0.0.2560.1440/-1080.-289.1080.1920@0.0.2560.1440" timestamp="1605497393535" />
     <state x="663" y="513" key="SettingsEditor/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1604972096786" />
     <state x="319" y="73" width="1567" height="1118" key="SettingsEditor/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605430097822" />
     <state x="872" y="467" key="Vcs.Push.Dialog.v2" timestamp="1604535870418">

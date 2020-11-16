@@ -12,9 +12,9 @@
             <option value="$PROJECT_DIR$/project" />
           </set>
         </option>
-        <option name="sbtVersion" value="1.4.0" />
         <option name="useSbtShellForImport" value="true" />
       </SbtProjectSettings>
     </option>
+    <option name="vmParameters" value="-server -Xms4096m -Xmx4096m -Xss2048k" />
   </component>
 </project>

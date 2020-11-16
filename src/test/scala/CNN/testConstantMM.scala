@@ -1,6 +1,5 @@
 package CNN
 
-import CNN.WinoUtil._
 import breeze.linalg._
 import chisel3.iotesters.{Driver, PeekPokeTester}
 import org.scalatest._
@@ -9,7 +8,7 @@ import org.scalatest._
 class testConstantMM extends FunSuite with DiagrammedAssertions {
 
   test("CNN.testConstantMM") {
-    Driver(() => new ConstantMM(B)) {
+    Driver(() => new ConstantMM(WinoB)) {
       c =>
         new PeekPokeTester(c) {
           val arr = DenseMatrix.zeros[Double](4, 4)
@@ -18,7 +17,7 @@ class testConstantMM extends FunSuite with DiagrammedAssertions {
             poke(c.io.in(i)(j), i * 4 + j)
           }
           
-          val matO = B * arr
+          val matO = WinoB * arr
 
           for (i <- 0 until 4; j <- 0 until 4) {
             assert(peek(c.io.out(i)(j)) == matO(i, j),

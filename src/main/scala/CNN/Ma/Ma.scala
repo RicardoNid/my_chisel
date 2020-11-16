@@ -1,8 +1,8 @@
-package CNN
+package CNN.Ma
 
 import scala.math.ceil
 
-object dataflow {
+object Ma {
 
   // 便利函数
   val divideAndCeil = (x: Int, y: Int) => ceil(x / y.toDouble).toInt

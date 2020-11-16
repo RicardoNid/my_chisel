@@ -1,12 +1,11 @@
-package CNN
-
-import Jama.Matrix
-import breeze.linalg._
+import breeze.linalg.DenseMatrix
 import chisel3._
 
-object CNNutil {
+package object CNN {
+
+  val outputDir = "./verilog_output/CNN"
+
   val aligned = (s: String) => if (s.length < 6) " " * (6 - s.length) + s else s.take(6)
-  val printArray = (A: Matrix) => A.getArray.foreach(row => println(row.map(_.toString).map(aligned).mkString("\t")))
 
   // 与常数矩阵进行矩阵乘法的电路
   def GEMM(wire: Vec[Vec[SInt]], coeff: DenseMatrix[Double]) = {
@@ -30,5 +29,24 @@ object CNNutil {
     }
     result
   }
-}
 
+  val WinoG = DenseMatrix(
+    (1.0, 0.0, 0.0),
+    (0.5, 0.5, 0.5),
+    (0.5, -0.5, 0.5),
+    (0.0, 0.0, 1.0)
+  )
+
+  val WinoB = DenseMatrix(
+    (1.0, 0.0, 0.0, 0.0),
+    (0.0, 1.0, -1.0, 1.0),
+    (-1.0, 1.0, 1.0, 0.0),
+    (0.0, 0.0, 0.0, -1.0),
+  )
+
+  val WinoA = DenseMatrix(
+    (1.0, 1.0, 1.0, 0.0),
+    (0.0, 1.0, -1.0, -1.0)
+  ).t
+
+}

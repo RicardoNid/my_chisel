@@ -2,7 +2,7 @@
 
 package CNN
 
-import CNN.CNNutil.GEMM
+import chisel3.stage.{ChiselGeneratorAnnotation, ChiselStage}
 import breeze.linalg.DenseMatrix
 import chisel3._
 
@@ -15,5 +15,15 @@ class ConstantMM(coeff: DenseMatrix[Double]) extends Module {
   val wire = Vec(4, Vec(4, SInt(8.W)))
 
   io.out := GEMM(io.in, coeff)
+}
 
+object ConstantMM {
+  def main(args: Array[String]): Unit = {
+
+    (new ChiselStage).execute(
+      Array(
+        "--target-dir", outputDir,
+        "--output-file", "constantMM"),
+      Seq(ChiselGeneratorAnnotation(() => new ConstantMM(WinoB))))
+  }
 }
