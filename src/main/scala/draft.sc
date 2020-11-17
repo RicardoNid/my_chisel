@@ -1,12 +1,25 @@
-import chisel3.{Vec, VecInit}
-import chisel3.experimental.FixedPoint
+val bounds = Array(2, 3, 4, 5)
 
-import scala.math.{Pi, round, sin}
+def dynamicLoopNest(): Unit = {
+  val layers = bounds.length
+  var current = 0
+  val index = Array.ofDim[Int](layers)
+  index.map(i => 0)
 
-def sinTable(amp: Double, n: Int, phase: Double) = {
-    val times = Range(0, n, 1).map(i => (i * 2 * Pi) / (n.toDouble - 1) - Pi + phase)
-    val inits = times.map(t => round(amp * sin(t)))
-    inits
+  def recursivePart(): Unit = {
+    if (current == layers) {
+      println(index.mkString(" "))
+    }
+    if (current != layers) {
+      println(current)
+      if (current != 0) index(current - 1) += 1
+      current += 1
+      for (i <- 0 until bounds(current - 1)) recursivePart()
+      current -= 1
+    }
   }
 
-sinTable(256, 1024, Pi/4)
+  recursivePart()
+}
+
+dynamicLoopNest()

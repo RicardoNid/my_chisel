@@ -1,9 +1,5 @@
 import breeze.linalg._
 
-case class LoopNestParam(
-                        N:Int = 2, M:Int = 3, C:Int = 5,
-                        )
-
 // 采用eyeriss tutorial的符号系统
 // 层参数
 val N = 2 // batch size
@@ -54,8 +50,7 @@ var input = Array.ofDim[Double](N, C, H, W) // 采用和pytorch一致的NCHW lay
 var filter = Array.ofDim[Double](M, C, R, S)
 var output = Array.ofDim[Double](N, M, P, Q)
 
-input = input.map(_.map(_.map(_.map(_ => 1.0))))
-filter = filter.map(_.map(_.map(_.map(_ => 1.0))))
+
 
 val output1 = output.map(_.map(_.map(_.map(_ => 0.0))))
 val output2 = output.map(_.map(_.map(_.map(_ => 0.0))))
@@ -107,6 +102,8 @@ var parallelInput = Array.ofDim[String](RP, SP)
 var parallelFilter = Array.ofDim[String](RP, SP)
 var parallelOutput = Array.ofDim[String](RP, SP)
 
+// todo : 寻找更优雅的循环嵌套方式
+
 for (n0 <- 0 until N0;
      m0 <- 0 until M0;
      c0 <- 0 until C0;
@@ -155,7 +152,6 @@ for (n0 <- 0 until N0;
   parallelInput(rP)(sP) = "(" + Array(p + r - PADDING, q + s - PADDING).mkString(" ") + ")"
   // parallelFilter(rP)(sP) = "(" + Array(r, s).mkString(" ") + ")"
   // parallelOutput(rP)(sP) = "(" + Array(p, q).mkString(" ") + ")"
-
 
 }
 
