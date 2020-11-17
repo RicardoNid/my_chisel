@@ -43,7 +43,8 @@
     - FIR144withClock_fixed 144阶FIR,使用700MHz时钟,修正DSP间路径,不存在跨列路径
     - TinyDemoOriginal 8阶FIR,接入跨时钟域多通道设计,未修正组合逻辑路径
     - TinyDemoImproved 8阶FIR,接入跨时钟域多通道设计,修正组合逻辑路径,因为错误的代码未能推断出ROM
-    - TinyDemoFinal 144阶FIR,接入跨时钟域多通道设计,修正组合逻辑路径,修正ROM推断,去除冗余计数器
+    - TinyDemoFinal 8阶FIR,接入跨时钟域多通道设计,修正组合逻辑路径,修正ROM推断,去除冗余计数器
+    - DemoFinal 144阶FIR,接入跨时钟域多通道设计,修正组合逻辑路径,修正ROM推断,去除冗余计数器
     - 对比得到时序性能和官方IP相当
 
 ### todo

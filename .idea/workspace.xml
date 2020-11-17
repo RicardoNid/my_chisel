@@ -9,15 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43355bc4-1398-4e7e-bf86-f341e2110460" name="Default Changelist" comment="ignore target,压缩工程尺寸">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/CNN/LoopBoundArray.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/CNN/LoopNestParams.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/CNN/OptimizedRAM.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/LoopNests.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/LoopNests.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/draft.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/draft.sc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,26 +119,26 @@
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\main\scala\CNN\Wino" />
-      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\main\scala\templates" />
-      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\test\scala\CORDIC" />
-      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\main\scala" />
-      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\verilog_output" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="CNN" />
       <recent name="basic" />
       <recent name="Xilinx" />
       <recent name="FIR" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\test\scala" />
+      <recent name="E:\LtrProjects\SharedProjects\my_chisel\src\main\scala" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="FIR" />
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\test\scala" />
-      <recent name="E:\LtrProjects\SharedProjects\my_chisel\src\main\scala" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\main\scala\CNN\Wino" />
+      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\main\scala\templates" />
+      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\test\scala\CORDIC" />
+      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\src\main\scala" />
+      <recent name="C:\Users\lsfan\Documents\GitHub\my_chisel\verilog_output" />
     </key>
   </component>
   <component name="RunManager">
@@ -162,15 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -248,6 +239,7 @@
       <workItem from="1605459499668" duration="3942000" />
       <workItem from="1605490891756" duration="14278000" />
       <workItem from="1605523806436" duration="20431000" />
+      <workItem from="1605610101069" duration="3735000" />
     </task>
     <task id="LOCAL-00001" summary="增加了使用函数实现的常数矩阵乘法模块,之后要解决其类型问题,主要是Matrix(仿真和参数生成)的Double和电路中定点数的转换问题,当前使用的是整型">
       <created>1604370626076</created>
@@ -372,9 +364,10 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="907" y="428" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604474916842" />
-    <state x="1019" y="535" width="447" height="282" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605454821149">
-      <screen x="62" y="0" width="2498" height="1440" />
+    <state x="981" y="560" width="447" height="282" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605610326539">
+      <screen x="0" y="40" width="2560" height="1400" />
     </state>
+    <state x="981" y="560" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.40.2560.1400/-1080.-249.1080.1880/2560.0.1920.1160@0.40.2560.1400" timestamp="1605610326539" />
     <state x="981" y="560" width="447" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605330491813" />
     <state x="3296" y="650" width="447" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@2560.264.1920.1040" timestamp="1605328013902" />
     <state x="1019" y="535" width="447" height="282" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605454821149" />
