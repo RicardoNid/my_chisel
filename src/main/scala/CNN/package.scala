@@ -1,11 +1,23 @@
 import breeze.linalg.DenseMatrix
 import chisel3._
+import chisel3.experimental.FixedPoint
+
+import scala.math.{round, sin}
+import scala.util.Random
 
 package object CNN {
+
+  val randGen = new Random(42)
+  val randValue = () => randGen.nextInt(100) + 50
 
   val outputDir = "./verilog_output/CNN"
 
   val aligned = (s: String) => if (s.length < 6) " " * (6 - s.length) + s else s.take(6)
+
+  def initROM(n: Int, bitWidth: Int) = { // 产生一个用于input/kernel数据的四维ROM
+    val ROM = VecInit(Range(0, n).map(_ => randValue().U(bitWidth.W)))
+    ROM
+  }
 
   // 与常数矩阵进行矩阵乘法的电路
   def GEMM(wire: Vec[Vec[SInt]], coeff: DenseMatrix[Double]) = {

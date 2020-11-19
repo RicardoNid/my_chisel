@@ -9,8 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43355bc4-1398-4e7e-bf86-f341e2110460" name="Default Changelist" comment="ignore target,压缩工程尺寸">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/basic/NestedCounter.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/basic/package.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/CNN/testStupidConv.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/basic/testNestedCounter.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/LoopBoundArray.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/LoopBoundArray.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/LoopNestParams.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/LoopNestParams.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/package.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/draft.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/draft.sc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +85,11 @@
         <option value="package-info" />
         <option value="Scala Class" />
         <option value="Scala Worksheet" />
-        <option value="ChiselPeekPokeTester" />
         <option value="SystemVerilog Module" />
-        <option value="Package Object" />
         <option value="Scala Object" />
         <option value="ChiselModule" />
+        <option value="Package Object" />
+        <option value="ChiselPeekPokeTester" />
       </list>
     </option>
   </component>
@@ -239,7 +248,9 @@
       <workItem from="1605459499668" duration="3942000" />
       <workItem from="1605490891756" duration="14278000" />
       <workItem from="1605523806436" duration="20431000" />
-      <workItem from="1605610101069" duration="3735000" />
+      <workItem from="1605610101069" duration="7489000" />
+      <workItem from="1605722796789" duration="10742000" />
+      <workItem from="1605774275524" duration="8877000" />
     </task>
     <task id="LOCAL-00001" summary="增加了使用函数实现的常数矩阵乘法模块,之后要解决其类型问题,主要是Matrix(仿真和参数生成)的Double和电路中定点数的转换问题,当前使用的是整型">
       <created>1604370626076</created>
@@ -328,11 +339,12 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="971" y="279" key="#Scala/2560.224.1920.1080/0.0.2560.1440/-1080.-289.1080.1920@0.0.2560.1440" timestamp="1605495903823" />
-    <state x="641" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1605499184466">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="481" y="425" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1605774893597">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="640" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1440/-1080.-247.1080.1920@0.0.2560.1440" timestamp="1604368791951" />
     <state x="640" y="533" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1440/2560.170.1920.1080/-1080.-247.1080.1920@0.0.2560.1440" timestamp="1604335039664" />
+    <state x="481" y="425" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1605774893597" />
     <state x="480" y="425" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1603711336768" />
     <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603791406468" />
     <state x="640" y="558" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604500216527" />
@@ -427,14 +439,16 @@
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
     <state x="1143" y="583" key="cloudConfig.SelfSettingsDialog/2560.264.1920.1040/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1604725126872" />
-    <state x="756" y="328" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603640510890">
-      <screen x="0" y="40" width="2560" height="1400" />
+    <state x="567" y="254" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605782286994">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
+    <state x="567" y="254" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1605782286994" />
     <state x="756" y="328" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603640510890" />
-    <state x="924" y="412" width="1934" height="656" key="dock-window-1" timestamp="1605575831550">
-      <screen x="0" y="40" width="2560" height="1400" />
+    <state x="-1021" y="-19" width="668" height="874" maximized="true" key="dock-window-1" timestamp="1605782246536">
+      <screen x="-1920" y="40" width="1920" height="1040" />
     </state>
     <state x="-673" y="-270" width="556" height="1896" key="dock-window-1/0.0.2560.1440/-1080.-247.1080.1920@0.0.2560.1440" timestamp="1604382626304" />
+    <state x="-1021" y="-19" width="668" height="874" maximized="true" key="dock-window-1/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1605782246536" />
     <state x="2552" y="202" width="976" height="1056" key="dock-window-1/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@-1080.-207.1080.1880" timestamp="1603356857768" />
     <state x="1294" y="128" width="556" height="1896" maximized="true" key="dock-window-1/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1604196720652" />
     <state x="-1060" y="-270" width="462" height="1027" maximized="true" key="dock-window-1/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@2560.210.1920.1040" timestamp="1603290989968" />
@@ -449,9 +463,10 @@
     </state>
     <state x="662" y="423" key="new project wizard/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603120193245" />
     <state x="662" y="423" key="new project wizard/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604497035682" />
-    <state x="181" y="189" key="run.anything.popup" timestamp="1605516034623">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="136" y="177" key="run.anything.popup" timestamp="1605780756931">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
+    <state x="136" y="177" key="run.anything.popup/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1605780756931" />
     <state x="2696" y="347" key="run.anything.popup/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603381629961" />
     <state x="181" y="224" key="run.anything.popup/0.40.2560.1400/2560.264.1920.1040/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605018814111" />
     <state x="181" y="189" key="run.anything.popup/2560.224.1920.1080/0.0.2560.1440/-1080.-289.1080.1920@0.0.2560.1440" timestamp="1605516034623" />
@@ -459,9 +474,10 @@
       <screen x="62" y="0" width="2498" height="1440" />
     </state>
     <state x="609" y="396" width="1167" height="742" key="save.file.as.template.dialog/2622.224.1858.1080/62.0.2498.1440/-1018.-289.1018.1920@62.0.2498.1440" timestamp="1605347810636" />
-    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1605525719704">
-      <screen x="0" y="40" width="2560" height="1400" />
+    <state x="707" y="274" width="672" height="504" key="search.everywhere.popup" timestamp="1605776461672">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
+    <state x="707" y="274" width="672" height="504" key="search.everywhere.popup/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1605776461672" />
     <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/-1080.-263.1080.1880/2560.123.1920.1040@0.40.2560.1400" timestamp="1604474955659" />
     <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1603685237765" />
     <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.40.2560.1400/2560.264.1920.1040/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605018869096" />

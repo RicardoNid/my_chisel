@@ -11,8 +11,9 @@ case class LoopBoundArray(N: Int = 2,
 
   def getLoopBounds = Array(N, M, C, R, S, P, Q)
 
-  def setOutput(PADDING: Int = 1, STRIDE: Int = 1, R: Int = 1, S: Int = 1) = {
+  def setOutput(PADDING: Int = 1, STRIDE: Int = 1, R: Int = R, S: Int = S) = {
     P = (H + 2 * PADDING - R) / STRIDE + 1
+    println(H, PADDING, R, STRIDE)
     Q = (W + 2 * PADDING - S) / STRIDE + 1
   }
 }
