@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 15 23:13:58 2020
+# Process ID: 6660
+# Current directory: C:/Users/lsfan/Documents/GitHub/my_chisel/implemented design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18220 C:\Users\lsfan\Documents\GitHub\my_chisel\implemented design\FIR145.dcp
+# Log file: C:/Users/lsfan/Documents/GitHub/my_chisel/implemented design/vivado.log
+# Journal file: C:/Users/lsfan/Documents/GitHub/my_chisel/implemented design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint {C:/Users/lsfan/Documents/GitHub/my_chisel/implemented design/FIR145.dcp}
+Command: open_checkpoint {C:/Users/lsfan/Documents/GitHub/my_chisel/implemented design/FIR145.dcp}
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1081.840 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 2079.605 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1038 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'FirFilter' is not ideal for floorplanning, since the cellview 'FirFilter' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2150.527 ; gain = 49.391
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2150.527 ; gain = 49.391
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2170.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 174 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 145 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 29 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.1 (64-bit) build 2902540
+open_checkpoint: Time (s): cpu = 00:00:54 ; elapsed = 00:00:45 . Memory (MB): peak = 2621.516 ; gain = 1539.676
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name FIR145
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:33 ; elapsed = 00:00:20 . Memory (MB): peak = 4260.938 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing -delay_type min_max -max_paths 10 -sort_by group -input_pins -routable_nets -name FIR145
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type min_max -sort_by group.
+check_timing -verbose -name {FIR WHOLE}
+create_slack_histogram -significant_digits 3 -name HISTO
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 2147483647 -nworst 1 -delay_type max -sort_by slack.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 00:26:03 2020...

@@ -62,8 +62,7 @@ object FirFilter {
       val value = randGen.nextInt % 100 + 500 // 避开较小的整数和2的幂,避免优化
       if (isPow2(value)) (value + 13).toDouble
       else value.toDouble
-    }
-    ))
+    }))
 
     // 精准地产生了145个DSP，综合器思考了相当长的时间
     val outputFile144 = "FIR144"

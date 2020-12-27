@@ -9,17 +9,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43355bc4-1398-4e7e-bf86-f341e2110460" name="Default Changelist" comment="ignore target,压缩工程尺寸">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/basic/NestedCounter.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/basic/package.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/CNN/testStupidConv.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/basic/testNestedCounter.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/FTN/InterleaveRAM.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/FTN/Mapper.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/FTN/package.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/common.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/FTN/testInterleaveRAM.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implemented design/vivado.jou" beforeDir="false" afterPath="$PROJECT_DIR$/implemented design/vivado.jou" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implemented design/vivado.log" beforeDir="false" afterPath="$PROJECT_DIR$/implemented design/vivado.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/LoopBoundArray.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/LoopBoundArray.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/LoopNestParams.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/LoopNestParams.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/StupidConv.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CNN/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CNN/package.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/draft.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/draft.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/FIR/FirFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FIR/FirFilter.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Xilinx/BRAM.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/BRAM.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Xilinx/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Xilinx/package.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/util.scala" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +90,8 @@
         <option value="Scala Worksheet" />
         <option value="SystemVerilog Module" />
         <option value="Scala Object" />
-        <option value="ChiselModule" />
         <option value="Package Object" />
+        <option value="ChiselModule" />
         <option value="ChiselPeekPokeTester" />
       </list>
     </option>
@@ -96,6 +99,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="6c22ee24-a551-47c3-81b5-05a32d86c635" />
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -113,7 +117,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/LtrProjects/SharedProjects/chisel/chisel-template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpinalTemplate" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -160,17 +164,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -250,7 +243,19 @@
       <workItem from="1605523806436" duration="20431000" />
       <workItem from="1605610101069" duration="7489000" />
       <workItem from="1605722796789" duration="10742000" />
-      <workItem from="1605774275524" duration="8877000" />
+      <workItem from="1605774275524" duration="9716000" />
+      <workItem from="1605876072619" duration="3086000" />
+      <workItem from="1605891793567" duration="5131000" />
+      <workItem from="1605923727765" duration="21000" />
+      <workItem from="1605949343152" duration="2128000" />
+      <workItem from="1605954417435" duration="1698000" />
+      <workItem from="1606093106358" duration="619000" />
+      <workItem from="1606112677522" duration="7000" />
+      <workItem from="1606378606404" duration="722000" />
+      <workItem from="1606448288615" duration="611000" />
+      <workItem from="1607435433322" duration="1954000" />
+      <workItem from="1607572157101" duration="629000" />
+      <workItem from="1608641225278" duration="2195000" />
     </task>
     <task id="LOCAL-00001" summary="增加了使用函数实现的常数矩阵乘法模块,之后要解决其类型问题,主要是Matrix(仿真和参数生成)的Double和电路中定点数的转换问题,当前使用的是整型">
       <created>1604370626076</created>
@@ -401,9 +406,10 @@
     </state>
     <state x="92" y="132" width="2376" height="1216" key="DiffContextDialog/0.40.2560.1400/-1080.-207.1080.1880/2560.210.1920.1040@0.40.2560.1400" timestamp="1603369992161" />
     <state x="92" y="95" width="2376" height="1251" maximized="true" key="DiffContextDialog/2560.224.1920.1080/0.0.2560.1440/-1080.-289.1080.1920@0.0.2560.1440" timestamp="1605492030569" />
-    <state x="1237" y="428" key="FileChooserDialogImpl" timestamp="1605350468211">
-      <screen x="62" y="0" width="2498" height="1440" />
+    <state x="1204" y="456" key="FileChooserDialogImpl" timestamp="1605896374756">
+      <screen x="0" y="40" width="2560" height="1400" />
     </state>
+    <state x="1204" y="456" key="FileChooserDialogImpl/0.40.2560.1400/-1080.-249.1080.1880@0.40.2560.1400" timestamp="1605896374756" />
     <state x="1204" y="456" key="FileChooserDialogImpl/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@-1080.-207.1080.1880" timestamp="1603521497725" />
     <state x="1204" y="456" key="FileChooserDialogImpl/0.40.2560.1400/2560.210.1920.1040/-1080.-207.1080.1880@0.40.2560.1400" timestamp="1603547346738" />
     <state x="1060" y="495" key="FileChooserDialogImpl/2560.210.1920.1040/-1080.-207.1080.1880/0.40.2560.1400@0.40.2560.1400" timestamp="1603247783877" />
